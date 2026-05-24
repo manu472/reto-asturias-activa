@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="78" y1="52" x2="1088" y2="578" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#154F3A"/>
+      <stop offset="0.52" stop-color="#2A7B58"/>
+      <stop offset="1" stop-color="#E1862B"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="309" y1="223" x2="903" y2="491" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5FAF3" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#D8EBDD" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="path" x1="651" y1="238" x2="706" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD9AB"/>
+      <stop offset="1" stop-color="#FFF8EC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="38" fill="url(#bg)"/>
+  <circle cx="1018" cy="132" r="58" fill="#F5C06F" fill-opacity="0.9"/>
+  <circle cx="1018" cy="132" r="29" fill="#FFF1DA"/>
+
+  <path d="M0 474C116 423 193 403 329 409C462 414 523 480 671 483C833 486 920 399 1200 383V630H0V474Z" fill="#0F3B2C" fill-opacity="0.74"/>
+  <path d="M79 475L260 268L435 430L582 225L845 475H79Z" fill="url(#mist)"/>
+  <path d="M221 475L394 324L539 475H221Z" fill="#F1D6AF" fill-opacity="0.94"/>
+  <path d="M562 472C595 389 620 332 672 270C701 235 739 204 788 179" stroke="url(#path)" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="796" cy="176" r="18" fill="#F8F5ED"/>
+  <circle cx="796" cy="176" r="8" fill="#18533D"/>
+
+  <rect x="80" y="82" width="120" height="120" rx="28" fill="#FFFFFF" fill-opacity="0.12"/>
+  <g transform="translate(84 86)">
+    <rect x="0" y="0" width="112" height="112" rx="56" fill="url(#bg)"/>
+    <path d="M22 79L39 41L53 60L61 47L79 79H22Z" fill="#F9FBF6"/>
+    <path d="M29 79L45 50L56 65L68 44L90 79H29Z" fill="#174735"/>
+    <path d="M51 87C47 76 46 67 49 58C50.8 52.2 54.4 46.8 59 42" stroke="#FFF1D7" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="61" cy="40" r="4.5" fill="#F7F2E8"/>
+    <circle cx="61" cy="40" r="2.2" fill="#1B5F45"/>
+  </g>
+
+  <text x="235" y="198" fill="#F8FBF6" font-family="Outfit, Arial, sans-serif" font-size="74" font-weight="800" letter-spacing="-1.5">
+    Reto Asturias Activa
+  </text>
+  <text x="238" y="272" fill="#EAF5EE" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="600">
+    Descubre rutas reales de Asturias, completa retos y gana puntos.
+  </text>
+  <text x="238" y="323" fill="#FCE7CC" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="700">
+    Comunidad, naturaleza y gamificacion en una sola plataforma.
+  </text>
+
+  <rect x="238" y="382" width="246" height="58" rx="29" fill="#F7F0E6" fill-opacity="0.14"/>
+  <text x="279" y="420" fill="#FFF7ED" font-family="Outfit, Arial, sans-serif" font-size="27" font-weight="700">
+    Rutas de Asturias
+  </text>
+
+  <rect x="502" y="382" width="201" height="58" rx="29" fill="#F7F0E6" fill-opacity="0.14"/>
+  <text x="544" y="420" fill="#FFF7ED" font-family="Outfit, Arial, sans-serif" font-size="27" font-weight="700">
+    Retos activos
+  </text>
+
+  <rect x="723" y="382" width="188" height="58" rx="29" fill="#F7F0E6" fill-opacity="0.14"/>
+  <text x="762" y="420" fill="#FFF7ED" font-family="Outfit, Arial, sans-serif" font-size="27" font-weight="700">
+    Ranking real
+  </text>
+</svg>

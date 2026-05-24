@@ -1,0 +1,33 @@
+<svg width="256" height="256" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="16" x2="108" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B5F45"/>
+      <stop offset="0.55" stop-color="#2B7E5B"/>
+      <stop offset="1" stop-color="#E1862B"/>
+    </linearGradient>
+    <linearGradient id="peak" x1="31" y1="42" x2="86" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAF4"/>
+      <stop offset="1" stop-color="#DCEAD9"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="62" y1="37" x2="64" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE1B8"/>
+      <stop offset="1" stop-color="#FFF8EC"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="64" cy="64" r="56" fill="url(#bg)"/>
+  <circle cx="64" cy="64" r="52.5" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+
+  <circle cx="90" cy="34" r="8" fill="#F5C06F"/>
+  <circle cx="90" cy="34" r="4.5" fill="#FFF0D7"/>
+
+  <path d="M23 86L42 44L58 65L67 50L88 86H23Z" fill="url(#peak)"/>
+  <path d="M31 86L47 55L60 70L74 48L97 86H31Z" fill="#174735" opacity="0.92"/>
+  <path d="M49 86L61 62L73 86H49Z" fill="#F4D7B0" opacity="0.95"/>
+
+  <path d="M63 95C58 82 57 70 60 59C62.2 51.2 66.1 45.7 72 39" stroke="url(#trail)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="74" cy="38" r="5.5" fill="#F8F4EA"/>
+  <circle cx="74" cy="38" r="2.6" fill="#1B5F45"/>
+
+  <path d="M38 93C46 88 54 86 64 86C74 86 84 88 92 93" stroke="rgba(255,248,236,0.72)" stroke-width="4" stroke-linecap="round"/>
+</svg>

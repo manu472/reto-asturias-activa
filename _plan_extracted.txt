@@ -1,0 +1,73 @@
+﻿PLAN FINANCIERO – Reto Asturias Activa
+1. Inversión inicial
+Concepto
+Coste (€)
+Dominio web (1 año)
+15 €
+Hosting (servidor)
+100 €
+Equipos
+0 €
+Software
+0 €
+Diseño gráfico
+50 €
+Marketing inicial
+300 €
+TOTAL
+465 €
+2. Costes mensuales
+Concepto
+Coste mensual (€)
+Hosting
+10 €
+Dominio (prorrateado)
+1,25 €
+Herramientas digitales
+10 €
+Publicidad
+50 €
+TOTAL
+71,25 €
+3. Fuentes de ingresos
+Fuente de ingresos
+Descripción
+Ingreso estimado
+Modelo Freemium
+Suscripción premium
+200 €/mes
+Publicidad
+Anuncios en la web
+50 €/mes
+Colaboraciones
+Acuerdos con empresas
+Variable
+Contenido patrocinado
+Rutas destacadas
+Variable
+4. Previsión de ingresos (6 meses)
+Concepto
+Valor
+Usuarios activos
+500
+Usuarios premium (10%)
+50
+Precio medio
+4 €/mes
+Ingresos premium
+200 €/mes
+Publicidad
+50 €/mes
+Total mensual
+250 €
+Total en 6 meses
+1.500 €
+5. Punto de equilibrio
+Concepto
+Valor
+Inversión inicial
+465 €
+Beneficio mensual
+179 €
+Tiempo recuperación
+3 meses

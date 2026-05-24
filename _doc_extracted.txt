@@ -1,0 +1,1588 @@
+﻿RETO ASTURIAS ACTIVA
+Desarrollo de aplicaciones WEB
+CURSO 2025/26
+Alumno/a Manuel Álvarez Suárez
+Tutor/a:
+Ángel González Fernández
+UNENDO
+CICLO FORMATIVO DE GRADO SUPERIOR EN DESARROLLO DE APLICACIONES WEB
+Descripción general del proyecto
+Introducción
+Reto Asturias Activa es una plataforma web de gamificación diseñada para fomentar el senderismo, la actividad física y el turismo activo en Asturias. La aplicación combina el deporte, la naturaleza y la tecnología, ofreciendo una experiencia interactiva en la que los usuarios pueden registrar sus rutas, acumular puntos, desbloquear logros y participar en retos comunitarios.
+Una característica destacada del proyecto será que la plataforma incluirá desde su lanzamiento un conjunto de rutas pre cargadas en el sistema, cuidadosamente seleccionadas por el administrador. Estas rutas iniciales permitirán que los usuarios puedan explorar y realizar actividades desde el primer momento, sin necesidad de que existan aportes previos por parte de la comunidad.
+Destinatarios:
+Residentes asturianos interesados en descubrir nuevas rutas y mantenerse activos.
+Turistas que deseen explorar Asturias de forma organizada y divertida.
+Asociaciones deportivas o de senderismo locales.
+Entidades turísticas que quieran promover el entorno natural asturiano.
+Alcance del proyecto
+El sistema cubrirá las siguientes funcionalidades:
+Gestión de usuarios: Registro, inicio de sesión y gestión del perfil personal.
+Catálogo de rutas: Visualización de rutas clasificadas por dificultad, duración, zona y tipo de actividad (senderismo, ciclismo, trail, etc.).
+Rutas pre cargadas: La aplicación contará con un conjunto de rutas ya integradas por defecto en la base de datos, visibles para todos los visitantes. Estas rutas estarán disponibles incluso antes de que los usuarios comiencen a registrar nuevas.
+Sistema de gamificación: Puntuaciones, logros y medallas según la dificultad y cantidad de rutas completadas.
+Retos comunitarios: Creación y participación en desafíos mensuales o estacionales.
+Ranking general: Clasificaciones por puntos acumulados (semanal y mensual).
+Gestión de rutas (admin): Alta, modificación y eliminación de rutas.
+Gestión de retos (admin): Creación, configuración y cierre de desafíos.
+Moderación (admin):Control de comentarios, reseñas y contenido de usuarios.
+La presencia de rutas pre cargadas garantiza que la aplicación ofrezca contenido atractivo desde el primer uso, mejorando la experiencia inicial y fomentando la exploración del territorio asturiano.
+Justificación y análisis de la realidad
+Asturias dispone de una amplia red de rutas naturales, pero la información suele encontrarse dispersa en diferentes páginas y aplicaciones. Además, la mayoría carecen de un enfoque motivacional que promueva la participación continua.
+La incorporación de rutas pre cargadas al inicio del proyecto soluciona uno de los principales problemas detectados en aplicaciones similares: la falta de contenido inicial. De esta forma, los usuarios encontrarán desde el primer momento rutas disponibles que les inviten a explorar, aumentando el interés y la retención en la plataforma.
+Esta propuesta permitirá:
+Centralizar información turística y deportiva en un único lugar.
+Promover hábitos saludables y sostenibles.
+Fomentar el turismo rural y natural.
+Atraer a nuevos usuarios mediante contenido inicial disponible.
+Marco Legal
+El desarrollo de Reto Asturias Activa implica el tratamiento de datos personales, la publicación de información turística y la posible interacción entre usuarios. Por ello, es fundamental establecer un marco legal sólido que garantice el cumplimiento de la normativa vigente en materia de protección de datos, derechos digitales, propiedad intelectual y accesibilidad web.
+A continuación, se detallan las principales leyes y regulaciones que afectan directa o indirectamente al proyecto:
+Protección de datos personales
+El sistema gestionará información básica de los usuarios (nombre, correo electrónico, contraseña cifrada, rutas completadas, puntuaciones, etc.), por lo que se debe garantizar la seguridad y confidencialidad de dichos datos.
+Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD): Regula el tratamiento de los datos personales y refuerza los derechos de los ciudadanos en el entorno digital. Obliga al desarrollador a informar al usuario sobre el uso de sus datos, el tiempo de conservación y la posibilidad de ejercer sus derechos de acceso, rectificación, supresión y oposición.
+Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD): Establece las bases del tratamiento de datos personales en toda la Unión Europea. El sistema debe cumplir principios como minimización de datos, transparencia, limitación del almacenamiento y seguridad en el tratamiento.
+En la práctica, esto significa que la plataforma deberá incluir:
+Un aviso legal y política de privacidad visible.
+Cifrado de contraseñas y protección frente a accesos no autorizados.
+Consentimiento explícito del usuario al registrarse.
+Servicios de la sociedad de la información
+Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE): Regula el uso de las páginas web y servicios electrónicos en España. Obliga a informar al usuario sobre la identidad del responsable del sitio, condiciones de uso y contacto. También exige cumplir normas sobre cookies, publicidad y envío de comunicaciones electrónicas.
+Propiedad intelectual y derechos de autor
+Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual (LPI): Protege el contenido original creado para la plataforma, como textos descriptivos de rutas, logotipos, iconografía o imágenes propias. En caso de utilizar material externo (mapas, fotografías, información turística),se deberán respetar las licencias de uso (por ejemplo, Creative Commons) y citar las fuentes.
+Uso de mapas y datos geográficos
+La aplicación hará uso de mapas a través de Leaflet.js o la API de Google Maps, lo que implica aceptar sus términos de servicio y políticas de uso.El proyecto deberá respetar los límites de utilización gratuita y las restricciones de redistribución de datos cartográficos.
+Accesibilidad y usabilidad web
+Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público. Aunque el proyecto no pertenece al sector público, se tomará como referencia este decreto para garantizar una navegación inclusiva. Esto incluye ofrecer textos alternativos para imágenes, contraste adecuado de colores y estructura semántica correcta del HTML.
+Responsabilidad del contenido
+El administrador será responsable de moderar el contenido publicado por los usuarios (comentarios o reseñas), eliminando mensajes ofensivos o que vulneren derechos de terceros.
+Asimismo, la aplicación deberá disponer de un mecanismo para reportar contenido inapropiado o incorrecto, en cumplimiento con la ética digital.
+Conclusión del marco legal
+El marco legal garantiza que Reto Asturias Activa sea una plataforma segura, responsable y respetuosa con la legislación vigente. Cumplir estas normativas no solo protege al usuario, sino que también otorga credibilidad y profesionalidad al proyecto, reforzando su viabilidad real como aplicación pública.
+Marco Teórico
+El marco teórico de Reto Asturias Activa se apoya en conceptos clave que combinan la tecnología web, la motivación mediante la gamificación y la promoción del turismo activo en entornos naturales. A continuación, se desarrollan los fundamentos teóricos que sustentan el proyecto:
+Gamificación
+La gamificación consiste en aplicar mecánicas y elementos propios del juego en contextos no lúdicos (educación,  deporte, turismo, etc.)con el fin de motivar y aumentar la participación del usuario.
+En este proyecto, la gamificación se manifiesta a través de:
+Puntos y medallas:que refuerzan la sensación de logro.
+Retos comunitarios: que fomentan la competencia sana entre los participantes.
+Rankings y progresos personales: que incentivan la mejora constante.
+El uso de gamificación convierte la simple consulta de rutas en una experiencia interactiva y motivadora, lo que ayuda a mantener el interés a largo plazo y promueve la práctica de actividades saludables.
+Turismo activo y sostenible
+El turismo activo se define como el conjunto de actividades recreativas o deportivas que se desarrollan en contacto directo con la naturaleza, promoviendo hábitos saludables y respeto medioambiental.
+Asturias, con su riqueza natural (Parque Nacional de los Picos de Europa, la Senda del Oso,la Ruta del Cares,etc.), es un territorio ideal para este tipo de turismo. La plataforma Reto Asturias Activa contribuirá a la divulgación responsable del entorno natural asturiano, animando a locales y visitantes a descubrir nuevas rutas sin sobreexplotar los recursos.
+Referencias:
+Organización Mundial del Turismo (OMT).Manual de Turismo Activo y Naturaleza.
+Consejería de Turismo del Principado de Asturias(2018):Turismo activo y  deporte en la naturaleza.
+Desarrollo web interactivo
+El proyecto se apoya en los principios del desarrollo web moderno, que busca ofrecer aplicaciones dinámicas, usables y seguras. Se emplearán tecnologías estándar como:
+HTML5y CSS3: para la estructura y el diseño adaptable (responsive).
+JavaScript y Leaflet.js:para la interacción y los mapas dinámicos.
+PHPy MySQL: para la gestión del backend y almacenamiento de datos.
+Bootstrap: para una maquetación limpia, moderna y coherente en todos los dispositivos.
+Este enfoque garantiza que la plataforma sea eficiente, intuitiva y accesible, además de escalable para futuras ampliaciones.
+Usabilidad y experiencia de usuario(UX)
+Un principio esencial en el diseño web es la usabilidad, entendida como la facilidad con la que un usuario puede utilizar una aplicación para alcanzar sus objetivos de manera efectiva.
+La interfaz de Reto Asturias Activa se desarrollará siguiendo  buenas prácticas de UX:
+Navegación sencilla e intuitiva.
+Botones y menús bien distribuidos.
+Colores y tipografías legibles.
+Feedback visual tras cada acción (por ejemplo, mensaje de “ruta añadida correctamente”).
+Todo esto busca crear una experiencia amigable, motivadora y accesible, especialmente importante para atraer a un público amplio.
+Contenidos precargados como elemento pedagógico y motivacional
+Una parte clave del enfoque teórico del proyecto es la existencia de rutas pre cargadas desde el inicio. Este elemento no solo tiene valor técnico, sino también psicológico y motivacional:
+Permite al usuario interactuar con contenido real desde su primer acceso.
+Elimina la frustración inicial de“no tener nada que ver o hacer”.
+Muestra ejemplos claros del funcionamiento del sistema.
+En términos de diseño instruccional, esto mejora la curva de aprendizaje y aumenta la retención de usuarios desde la primera experiencia.
+Educación, salud y tecnología
+El proyecto también se enmarca en la tendencia actual de integrar la tecnología digital en la promoción de hábitos saludables. Aplicaciones web con enfoque lúdico contribuyen a la mejora del bienestar físico y mental, fomentando la actividad física mediante la diversión.
+La combinación de gamificación + salud + naturaleza convierte Reto Asturias Activa en una herramienta educativa y socialmente útil, coherente con los valores de sostenibilidad, vida activa y digitalización del ocio.
+Conclusión del marco teórico
+El marco teórico de Reto Asturias Activa demuestra que el proyecto no solo tiene una base técnica sólida, sino también una fundamentación conceptual que lo respalda desde los ámbitos del diseño web, la motivación humana y el turismo sostenible. La unión entre tecnología y naturaleza es el eje central del proyecto, orientado a mejorar la calidad de vida y el conocimiento del entorno asturiano.
+Temporización
+La temporización del proyecto Reto Asturias Activa se ha planificado cuidadosamente con el objetivo de distribuir las tareas en fases lógicas, ordenadas y realistas, teniendo en cuenta los recursos disponibles y la complejidad técnica de cada etapa.
+El desarrollo completo se estima en 11 semanas, aproximadamente tres meses de trabajo, siguiendo una metodología incremental, en la que se van añadiendo nuevas funcionalidades sobre una base estable.
+A continuación se detalla el plan de trabajo propuesto:
+Fase
+Duración estimada
+Descripción detallada de las tareas
+1.Análisisy diseño
+2 semanas
+Estudio de los requisitos funcionales y técnicos.
+Elaboración del diagrama entidad- relación.
+Creación del modelo relacional.
+Diseño de prototipos visuales en Figma.
+Selección de las rutas pre cargadas que se incluirán en la base de datos inicial.
+2. Desarrollo inicial (Frontend y Backend básico)
+3 semanas
+Implementación de las estructuras principales en HTML, CSS y JavaScript.
+Desarrollo del sistema de registro e iniciodesesión.
+Creación del catálogo de rutas pre cargadas y visualización inicial.
+Configuración del entorno de pruebas en XAMPP.
+3. Implementaciónde gamificación y ranking
+3 semanas
+Programación del sistema de puntos, logros y medallas.
+Creación de retos comunitariosy rankings(semanalymensual).
+Vinculación de los logros con las rutas completadas.
+4.Pruebas, depuración y optimización
+2 semanas
+Realización de pruebas funcionales en distintos navegadores.
+Verificación de seguridad (validaciones, contraseñas cifradas, etc.).
+Revisión del funcionamiento de las rutas precargadas.
+Ajustes de rendimiento y corrección de errores.
+5. Documentacióny presentación final
+1 semana
+Redacción de la memoria técnica.
+Elaboración de capturas y anexos.
+Preparación de la presentación del proyecto.
+Pruebas de despliegue final en entorno real o simulado.
+Duración total estimada: 11semanas (3meses)
+Metodología de trabajo
+Para la gestión del tiempo se aplicará un enfoque secuencial e incremental, en el que cada fase depende del éxito de la anterior, pero permite ajustes sobre la marcha. El uso de GitHub permitirá llevar control de versiones y tener un registro de los avances semanales.
+Durante la planificación se reservarán algunos días de margen para imprevistos técnicos o cambios menores en los requisitos.
+Objetivos de la temporización
+Asegurar una evolución progresiva y controlada del sistema.
+Garantizar que todas las fases (análisis, diseño, desarrollo, pruebas y documentación) se completan adecuadamente.
+Mantener un equilibrio entre la parte técnica (desarrollo) y la parte documental (memoria, presentación).
+Estudio de la viabilidad del sistema 
+4.1. Análisis DAFO (Debilidades, Amenazas, Fortalezas y Oportunidades)
+El análisis DAFO es una herramienta esencial para evaluar la situación actual del proyecto "Reto Asturias Activa" antes de su lanzamiento. Este examen interno y externo permite identificar las palancas de crecimiento (Fortalezas y Oportunidades) y los riesgos que deben ser mitigados (Debilidades y Amenazas).
+4.1.1. Análisis Interno: Fortalezas (F) y Debilidades (D)
+A. Fortalezas (F)
+Las Fortalezas son atributos internos del proyecto que le confieren una ventaja competitiva directa en el mercado.
+ID
+Fortaleza
+Explicación Detallada
+F1
+Gamificación como Core del Producto
+A diferencia de otras aplicaciones de tracking puras, "Reto Asturias Activa" utiliza la motivación extrínseca (puntos, logros, clasificaciones) e intrínseca (retos comunitarios, exploración) para fomentar la retención. Esto reduce la tasa de abandono y promueve la actividad recurrente, siendo un potente motor de fidelización.
+F2
+Contenido Curado de Alta Calidad
+El proyecto incluye un conjunto de rutas pre-cargadas y validadas por el administrador desde el lanzamiento. Esto elimina el problema del "arranque en frío" (falta de contenido inicial) y asegura un estándar de calidad, fiabilidad y seguridad en las rutas ofrecidas, algo crucial para el turismo.
+F3
+Hiper-localización y Enfoque Temático
+El enfoque exclusivo en Asturias permite una comunicación de marketing y un desarrollo de producto altamente segmentados. El proyecto se convierte inmediatamente en el referente regional, facilitando alianzas con entidades locales y una conexión emocional más fuerte con el usuario residente.
+F4
+Arquitectura Basada en Frameworks Robustos
+El desarrollo en Laravel (o tecnología similar) garantiza una arquitectura MVC escalable, segura y mantenible. Esto reduce la deuda técnica futura y facilita la implementación de módulos avanzados (ej. analíticas, APIs externas).
+B. Debilidades (D)
+Las Debilidades son limitaciones internas que deben ser subsanadas o compensadas para no comprometer el éxito del proyecto.
+ID
+Debilidad
+Explicación Detallada
+D1
+Dependencia de la Validación de Rutas
+La alta calidad de las rutas (F2) implica que la gestión y validación del tracking cargado por el usuario es un proceso manual o semi-automatizado con un alto coste de desarrollo y mantenimiento administrativo. El crecimiento del catálogo depende de la inversión de tiempo del administrador.
+D2
+Necesidad de Conocimiento Técnico (GPX/KML)
+La validación de la ruta requiere que el usuario cargue un archivo GPX/KML, lo cual supone una barrera de entrada para usuarios menos tecnológicos. La usabilidad se reduce al requerir herramientas externas de tracking y un proceso de transferencia de archivos.
+D3
+Fase Inicial sin "Efecto Red"
+El sistema de gamificación (F1) es inherentemente social. Sin una masa crítica inicial de usuarios, las clasificaciones serán poco significativas y los retos comunitarios fallarán por baja participación, debilitando la propuesta de valor.
+D4
+Dependencia del Clima y la Estacionalidad
+Al estar enfocado en actividades al aire libre, el rendimiento de la aplicación está directamente afectado por la climatología asturiana, reduciendo la actividad y las métricas de engagement durante los meses de invierno o de lluvia intensa.
+4.1.2. Análisis Externo: Oportunidades (O) y Amenazas (A)
+C. Oportunidades (O)
+Las Oportunidades son factores externos que el proyecto puede aprovechar para obtener una ventaja competitiva.
+ID
+Oportunidad
+Explicación Detallada
+O1
+Auge del Ecoturismo y el Turismo Activo
+La tendencia global post-pandemia ha disparado el interés por el turismo de naturaleza, las actividades al aire libre y el deporte individual. La aplicación se alinea perfectamente con la demanda de experiencias turísticas sostenibles y activas.
+O2
+Financiamiento y Alianzas Institucionales
+El Principado de Asturias promueve activamente el turismo rural y la digitalización. Existe una alta probabilidad de conseguir subvenciones o establecer colaboraciones estratégicas con entidades como Turismo de Asturias o Ayuntamientos, facilitando la promoción y el acceso a datos oficiales (IGN).
+O3
+Marketing de Contenidos Geográfico (SEO)
+La plataforma puede capitalizar las búsquedas de "rutas de senderismo en [nombre de pueblo/parque natural]". El contenido detallado de las rutas pre-cargadas permite un posicionamiento SEO altamente efectivo y de bajo coste de adquisición.
+O4
+Mercado de Datos Agregados
+La acumulación de datos de tracking de usuarios (O1) crea una oportunidad para generar informes agregados sobre los flujos turísticos en áreas rurales. Esta información puede ser de alto valor para las administraciones públicas y empresas de servicios.
+D. Amenazas (A)
+Las Amenazas son factores externos que representan un riesgo para la consecución de los objetivos del proyecto.
+ID
+Amenaza
+Explicación Detallada
+A1
+Competencia de Gigantes Globales
+Aplicaciones como Wikiloc, Strava, o AllTrails tienen bases de usuarios masivas, un fuerte efecto red (D3) y un alto nivel de confianza. El usuario puede preferir usar una plataforma ya conocida, aunque esta no esté gamificada.
+A2
+Dependencia de APIs Externas
+El sistema depende de la estabilidad y la política de precios de plataformas de mapas externas (ej. Google Maps Platform). Un cambio en las tarifas o en la funcionalidad podría tener un impacto económico o técnico significativo.
+A3
+Falta de Confianza en la Privacidad
+La gestión de datos de geolocalización es sensible. Los usuarios pueden ser reacios a compartir su ubicación precisa debido a la percepción de riesgo o preocupaciones sobre la privacidad (RGPD), especialmente si la plataforma es nueva.
+A4
+Evolución Rápida del Hardware Móvil
+La rápida obsolescencia de los formatos de archivo de tracking o la evolución de los sistemas operativos (iOS/Android) puede requerir actualizaciones constantes en la lógica de procesamiento de archivos GPX/KML.
+4.2. Análisis CAME: Estrategias de Dirección
+El análisis CAME (Corregir, Afrontar/Aprovechar, Mantener, Explotar) traduce los hallazgos del DAFO en estrategias concretas de acción para la gestión del proyecto.
+4.2.1. Estrategias Ofensivas 
+Estas estrategias buscan maximizar las fortalezas del proyecto para capitalizar las oportunidades del mercado.
+Estrategia
+Enfoque
+Justificación
+E1: Campaña "Conquista tu Tierra"
+Utilizar la Gamificación (F1) y el Contenido Curado (F2) para explotar el Auge del Ecoturismo (O1). Lanzar retos con enfoque regional para posicionar la aplicación como la experiencia gamificada local definitiva.
+La diferenciación única del proyecto (gamificación y foco Asturiano) debe ser la base de la campaña de lanzamiento para atraer al segmento más activo.
+E2: Alianza Público-Privada
+Aprovechar el Enfoque Hiper-localizado (F3) para buscar la colaboración con organismos públicos (O2) (Turismo de Asturias, Ayuntamientos). Ofrecer el sistema como una plataforma de promoción oficial de rutas, garantizando credibilidad.
+La marca institucional aumenta la confianza del usuario (mitiga A1) y aporta financiamiento (mitiga A2).
+4.2.2. Estrategias Adaptativas 
+Estas estrategias buscan minimizar las debilidades aprovechando las oportunidades del entorno.
+Estrategia
+Enfoque
+Justificación
+E3: Inversión en Usabilidad del Tracking
+Corregir la Barrera Técnica del GPX/KML (D2) aprovechando la tendencia de datos (O4). Desarrollar un tutorial in-app muy simple y explorar alternativas (ej. API de conexión directa con Strava/Wikiloc, si es viable) para reducir la fricción en la carga de archivos.
+La usabilidad en la subida de evidencia es crítica para la retención (F1). Simplificar el proceso facilita la entrada de usuarios menos técnicos.
+E4: Apalancamiento en Marketing Institucional
+Corregir la Fase Inicial sin Efecto Red (D3) apalancándose en la promoción institucional (O2). El lanzamiento debe ir de la mano de un organismo oficial para generar un flujo rápido de usuarios que active la red social y los rankings.
+Un lanzamiento con apoyo institucional proporciona credibilidad inmediata, atrayendo la masa crítica necesaria para que la gamificación funcione.
+4.2.3. Estrategias Defensivas 
+Estas estrategias buscan utilizar las fortalezas del proyecto para contrarrestar o minimizar el impacto de las amenazas externas.
+Estrategia
+Enfoque
+Justificación
+E5: Foco en la Propuesta de Valor Única (PVU)
+Defenderse de la Competencia Global (A1) manteniendo el Contenido Curado (F2) y el Enfoque Hiper-localizado (F3) como PVU. Promocionar la idea de que "Wikiloc te dice dónde ir; Reto Asturias Activa te motiva a volver".
+El proyecto no puede competir en volumen de rutas, sino en la calidad de la experiencia gamificada y la relevancia local de su contenido.
+E6: Contenidos de Retención de Invierno
+Minimizar la Dependencia Climática (D4) utilizando la Gamificación (F1). Introducir retos de invierno basados en acumulación de puntos por otros medios (ej. retos virtuales, pruebas de conocimiento sobre rutas históricas) para mantener el engagement y el nivel de los usuarios.
+La retención en invierno es vital. La fidelización no debe depender del sol.
+4.2.4. Estrategias de Supervivencia (Corregir y Afrontar: D + A)
+Estas estrategias son de contingencia y buscan reducir las debilidades para evitar que las amenazas tengan un impacto catastrófico.
+Estrategia
+Enfoque
+Justificación
+E7: Auditoría de Seguridad y Transparencia (RGPD)
+Corregir la Falta de Confianza (D3) y defenderse de la Amenaza de Privacidad (A3). Implementar protocolos de seguridad robustos y ser completamente transparentes sobre cómo se gestionan los datos de geolocalización.
+La seguridad es crítica para la retención. La transparencia genera confianza en un producto nuevo.
+E8: Optimización de Costos Geográficos
+Reducir la Dependencia de APIs Externas (A2) mediante la investigación de alternativas Open Source (ej. Leaflet con capas de OpenStreetMap o el IGN español) para la visualización de rutas, manteniendo el servicio de geocodificación de Google solo para funciones esenciales.
+Mitiga el riesgo de cambios de política y costes de la tecnología propie
+Plan de Marketing 
+El objetivo principal de este plan es la consecución de 500 usuarios activos en la plataforma durante los primeros 6 meses post-lanzamiento, posicionando la aplicación como la herramienta de referencia para el turismo activo en la región asturiana.
+I. Análisis de la Situación 
+Aspecto
+Descripción
+Fortalezas (Internas)
+1. Gamificación: Alto poder motivacional y de retención. 2. Contenido Curado: Rutas pre-cargadas y validadas por el administrador (calidad asegurada). 3. Nicho Geográfico: Enfoque hiper-localizado en Asturias, diferenciación clara.
+Debilidades (Internas)
+1. Dependencia de Validación: La validación inicial de rutas depende del administrador. 2. Competencia de Apps Genéricas: Compite con apps globales de fitness (Strava, Wikiloc) que ya tienen una base de usuarios establecida.
+Oportunidades (Externas)
+1. Tendencia al Turismo Sostenible: Crecimiento del turismo rural y activo post-pandemia. 2. Apoyos Institucionales: Posibilidad de colaboración con organismos de Turismo del Principado. 3. Marketing de Contenidos: Alto potencial para generar contenido visual (fotos de rutas).
+Amenazas (Externas)
+1. Clima: La climatología asturiana puede reducir la actividad de senderismo en ciertos meses. 2. Saturación Digital: Dificultad para destacar en las tiendas de aplicaciones.
+I. Público Objetivo 
+El plan se enfocará en dos segmentos principales:
+Segmento
+Descripción y Motivación
+Canales Clave
+1. Residentes Activos (25-45 años)
+Personas ya interesadas en el deporte o la naturaleza que buscan motivación, competición social y descubrir rincones cercanos. Motivación: Logros, clasificación y retos comunitarios.
+Instagram, Grupos de Facebook (Senderismo Asturias), Publicidad de Display Local.
+2. Turistas de Naturaleza (35-60 años)
+Turistas nacionales o internacionales que planifican viajes de senderismo y buscan itinerarios validados y organizados. Motivación: Confianza en la calidad de la ruta y organización del viaje.
+Google Ads (búsquedas por "rutas Asturias"), Blogs de Viajes, Colaboraciones.
+III. Estrategia de Contenidos y Posicionamiento
+El posicionamiento se centrará en: "Reto Asturias Activa: Convierte cada paso en una victoria y explora Asturias como nunca."
+Pilar de Contenido
+Temática y Formato
+Propósito
+A. Inspiración y Atracción (Top of Funnel)
+Fotografías de alta calidad de rutas asturianas (Lagos de Covadonga, Ruta del Cares, etc.). Vídeos cortos de "Rutas Desconocidas".
+Generar tráfico a la web y engagement visual en redes sociales.
+B. Valor y Educación (Middle of Funnel)
+Artículos de blog sobre "Cómo interpretar el desnivel de una ruta", "Equipo esencial para senderismo en Asturias", "Historia de la ruta X".
+Posicionamiento SEO para atraer a usuarios que buscan información específica.
+C. Gamificación y Motivación (Bottom of Funnel)
+Anuncios de los "Retos Comunitarios" activos. Publicación semanal de la Tabla de Clasificación (Top 10). Historias de éxito de usuarios que desbloquearon logros difíciles.
+Impulsar el registro, la actividad y la retención dentro de la plataforma.
+IV. Tácticas de Lanzamiento y Promoción (Marketing Mix)
+Fase 1: Pre-Lanzamiento (Mes -1)
+Activación SEO: Publicar la estructura básica de la web y el Blog con 10 artículos de alta calidad sobre las 10 rutas más populares de Asturias.
+Captación de Beta Testers: Campaña de lead generation en redes sociales ofreciendo acceso anticipado a cambio de feedback (fidelización inicial).
+Preparación de Activos: Diseño de anuncios gráficos (banners) enfocados en el beneficio: "Acumula Puntos, Desbloquea Asturias".
+Fase 2: Lanzamiento (Mes 0 a Mes 3)
+Campaña de Pago (SEA/PPC):
+Google Ads (Búsqueda): Ofertar por términos de alta intención de búsqueda: "app senderismo Asturias", "rutas fáciles Asturias".
+Social Ads (Instagram/Facebook): Segmentación por ubicación (Asturias) e intereses (outdoor, fitness, running). Promoción directa del reto de lanzamiento.
+Marketing de Contenidos (SEO): Mantener una frecuencia de 3 posts de blog por semana. Optimizar las meta-descripciones de las fichas de ruta para la búsqueda.
+Estrategia de Alianzas (Influencer Marketing): Contactar con 5 micro-influencers de Asturias especializados en naturaleza/viajes para que realicen una ruta y publiquen el proceso de registro y obtención de puntos en la app.
+Fase 3: Crecimiento y Retención (Mes 4 a Mes 6)
+Marketing de Email: Segmentar a los usuarios por nivel o actividad. Enviar newsletters personalizadas: "Rutas recomendadas para tu nivel", "Estadísticas de tu última semana".
+Relaciones Públicas (PR): Contactar a medios de comunicación regionales (La Voz de Asturias, TPA) con una nota de prensa sobre el éxito del lanzamiento y el impacto en el turismo local.
+Fidelización con Contenido Exclusivo: Anunciar la liberación de "Logros ocultos" o la disponibilidad de rutas exclusivas solo para usuarios de alto nivel.
+V. Presupuesto 
+Se estima un presupuesto inicial enfocado en la adquisición de usuarios mediante publicidad y contenido, clave en la fase inicial.
+Partida
+Justificación
+Costo Estimado (6 Meses)
+Publicidad Digital (PPC/Social Ads)
+Impulsar el registro y la participación en el reto de lanzamiento.
+40%
+Creación de Contenido (Blog/SEO)
+Contratación de un redactor freelance o tiempo dedicado a la redacción de 20 artículos clave.
+25%
+Diseño Gráfico / Activos de Campaña
+Creación de banners y material visual profesional para anuncios.
+15%
+Alianzas / Micro-Influencers
+Pago o fee por la promoción de la app a perfiles relevantes.
+10%
+Mailing / Herramientas de Analítica
+Suscripción a Mailchimp/Sendinblue y herramientas de monitoreo.
+10%
+TOTAL
+100%
+(Presupuesto X)
+VI. Métricas Clave de Desempeño 
+El éxito se medirá con métricas claras y cuantificables:
+KPI Principal: Usuarios Activos Mensuales. Meta: 500 MAU al finalizar el Mes 6.
+Adquisición:
+Costo de Adquisición de Usuario: Se debe mantener por debajo del valor de retención proyectado.
+Tasa de Conversión (Registro): % de visitantes que se registran.
+Retención y Gamificación:
+Engagement Rate: Número promedio de rutas registradas por usuario al mes.
+Tasa de finalización de Retos Comunitarios.
+Este plan ofrece un camino estructurado para llevar "Reto Asturias Activa" del entorno académico al mercado real, demostrando un análisis de viabilidad completo.
+3. Descripción del entorno tecnológico
+Introducción
+El entorno tecnológico de Reto Asturias Activa está diseñado para ofrecer una experiencia web dinámica, fluida y accesible, tanto para los usuarios que navegan por la plataforma como para los administradores encargados de mantenerla. El sistema se desarrollará utilizando tecnologías web estándar (HTML, CSS, JavaScript, PHP y MySQL), garantizando compatibilidad multiplataforma, bajo coste de implementación y facilidad de mantenimiento.
+Perfiles de usuario
+En la aplicación se diferenciarán claramente dos tipos de usuarios principales: usuarios estándar y administradores. Cada perfil contará con un conjunto de funcionalidades y permisos específicos dentro del sistema.
+Usuario estándar
+Es el público general de la plataforma: excursionistas, ciclistas, turistas o residentes asturianos interesados en realizar rutas al aire libre. Su papel principal es interactuar con las rutas, participar en los retos y consultar su progreso personal.
+Funciones principales:
+Registro y autenticación: el usuario podrá crear una cuenta con sus datos personales y acceder mediante su correo y contraseña.
+Consulta de rutas pre cargadas: incluso sin registrarse, podrá visualizar un conjunto inicial de rutas cargadas por defecto en la base de datos, lo que le permitirá explorar el contenido antes de unirse a la comunidad.
+Visualización de detalles de rutas: podrá consultar descripciones, dificultad, distancia, localización en mapa y recomendaciones.
+Marcado de rutas completadas: tras realizar una actividad, podrá marcarla como completada, sumando puntos a su perfil.
+Sistema de puntos y logros: recibirá recompensas simbólicas (medallas o insignias) según la cantidad y dificultad de las rutas completadas.
+Participación en retos comunitarios: podrá unirse a desafíos globales o mensuales (por ejemplo, “realiza 50 km en octubre”).
+Historial personal: el usuario dispondrá de un apartado donde se reflejen sus rutas completadas, puntos, logros y posición en el ranking.
+Interacción social (opcional): podrá dejar valoraciones o comentarios sobre las rutas, fomentando la participación comunitaria.
+Objetivos del perfil usuario:
+Motivar la práctica deportiva.
+Descubrir nuevas rutas en Asturias.
+Competir y compartir logros con otros usuarios.
+Acceder fácilmente a información turística y deportiva.
+Administrador
+El perfil de administrador está destinado al personal encargado de gestionar y mantener el contenido del sistema. Su papel es fundamental para mantener actualizada la información, garantizar la calidad de las rutas y moderar la actividad de los usuarios.
+Funciones principales:
+Gestión del catálogo de rutas: puede añadir, editar o eliminar rutas, tanto las
+Pre cargadas iniciales como las nuevas.
+Actualización de rutas pre cargadas: revisa periódicamente la información base del sistema para mantener la fiabilidad del contenido.
+Gestión de retos: crea, configura y elimina los desafíos activos, definiendo duración, metas y recompensas.
+Moderación de comentarios y reseñas: controla que los aportes de los usuarios sean apropiados y respetuosos.
+Gestión de usuarios: puede suspender cuentas inactivas o con mal uso del sistema.
+Análisis estadístico: accede a métricas de participación, rutas más populares y logros obtenidos.
+Gestión de copias de seguridad: mantiene respaldos de la base de datos y del sistema.
+Pruebas y mantenimiento técnico: verifica el correcto funcionamiento de las funcionalidades tras cada actualización.
+Objetivos del perfil administrador:
+Mantener actualizada la información del portal.
+Garantizar una experiencia positiva y segura.
+Promover nuevas rutas y retos.
+Asegurar el cumplimiento de las normas del sistema.
+Tecnologías por perfil
+Perfil
+Tecnologías utilizadas
+Usuario estándar
+HTML, CSS, JavaScript, Bootstrap, PHP. Acceso a rutas precargadas mediante consultas públicas.
+Administrador
+PHP/Laravel, MySQL, panelde gestión con CRUD completo de rutas (incluyendo precargadas).
+General (ambos)
+XAMPP,Canva,GitHub.
+4. Especificación de requisitos
+4.1. Introducción y Alcance de la Especificación
+El presente documento detalla la totalidad de los requisitos funcionales y no funcionales necesarios para el desarrollo y la puesta en marcha de la plataforma "Reto Asturias Activa". Esta especificación actúa como el acuerdo formal de lo que el sistema debe hacer y cómo debe comportarse, sirviendo como la hoja de ruta para las fases de diseño, implementación y validación.
+4.1.1. Propósito
+El propósito principal es definir con claridad y precisión las capacidades del sistema para:
+Gestionar de forma segura la información de los usuarios y su actividad.
+Ofrecer una experiencia de usuario gamificada y motivadora.
+Integrar eficientemente datos geográficos y de tracking de rutas.
+Proporcionar herramientas de administración para el mantenimiento y curación del contenido.
+4.1.2. Convenciones
+Todos los requisitos se identifican mediante un código único para facilitar su trazabilidad:
+RF.X.Y: Requisito Funcional (Módulo.ID).
+RNF.X.Y: Requisito No Funcional (Categoría.ID).
+4.2. Requisitos Funcionales (RF)
+Los requisitos funcionales describen las funciones y tareas que el sistema debe realizar en beneficio de los actores (Visitante, Usuario Registrado y Administrador).
+RF.1: Módulo de Gestión de Usuarios y Autenticación
+ID
+Nombre del Requisito
+Actor
+Descripción Detallada
+Criterio de Aceptación
+RF.1.1
+Registro de Usuario
+Visitante
+El sistema debe permitir a un usuario crear una cuenta utilizando su email y contraseña, aceptando los términos y condiciones.
+El sistema almacena las credenciales hasheadas y redirige al usuario al dashboard.
+RF.1.2
+Inicio y Cierre de Sesión
+Usuario/Admin
+El sistema debe autenticar al usuario y mantener la sesión activa hasta que el usuario la cierre explícitamente o expire por inactividad (30 min).
+El usuario accede al área privada correspondiente a su rol (Dashboard o Panel Admin).
+RF.1.3
+Gestión de Perfil
+Usuario
+El usuario debe poder actualizar su nombre de visualización, foto de perfil y contraseña.
+La información se actualiza correctamente en la BBDD, excepto la contraseña que debe ser hasheada de nuevo.
+RF.1.4
+Recuperación de Contraseña
+Visitante
+El sistema debe permitir la recuperación de contraseña vía correo electrónico con un enlace temporal y único.
+El usuario recibe un email con un token válido por un tiempo limitado (ej. 1 hora).
+RF.1.5
+Visualización de Estadísticas
+Usuario
+El perfil debe mostrar un resumen de la actividad: puntos totales, nivel actual, rutas completadas, logros desbloqueados.
+Las métricas se calculan en tiempo real y son visibles en el perfil de usuario.
+RF.2: Módulo de Catálogo de Rutas y Visualización
+ID
+Nombre del Requisito
+Actor
+Descripción Detallada
+Criterio de Aceptación
+RF.2.1
+Visualización del Catálogo
+Visitante/Usuario
+El sistema debe mostrar un listado paginado de todas las rutas pre-cargadas en el sistema.
+Se muestra una miniatura de la ruta, nombre, distancia, desnivel y dificultad.
+RF.2.2
+Filtrado Avanzado
+Visitante/Usuario
+Debe existir un sistema de filtros por: Dificultad (Baja, Media, Alta), Distancia (rangos) y Desnivel Acumulado (rangos).
+La lista de rutas se actualiza dinámicamente según los filtros seleccionados.
+RF.2.3
+Detalle de la Ruta
+Visitante/Usuario
+Al seleccionar una ruta, el sistema debe mostrar una página dedicada con la descripción completa, fotos, la geometría del trazado en un mapa interactivo (API de Google Maps o similar), y el código de puntos base que otorga.
+La geometría del trazado (polyline) se superpone correctamente sobre el mapa base.
+RF.2.4
+Integración Geográfica
+Visitante/Usuario
+El mapa interactivo debe permitir acercamiento (zoom), desplazamiento (pan) y, opcionalmente, la visualización de capas de satélite o topográficas.
+El mapa se inicializa y es completamente funcional en el lado del cliente (navegador).
+RF.3: Módulo de Registro de Actividad (Núcleo)
+Este módulo es la piedra angular del proyecto, ya que valida la actividad del usuario y dispara el proceso de gamificación.
+ID
+Nombre del Requisito
+Actor
+Descripción Detallada
+Criterio de Aceptación
+RF.3.1
+Carga de Evidencia
+Usuario
+El usuario debe poder cargar la evidencia de la ruta completada, típicamente un archivo GPX o KML generado por su dispositivo GPS o aplicación móvil de tracking.
+El sistema acepta y parsea el archivo, extrayendo los datos de coordenadas y tiempo.
+RF.3.2
+Algoritmo de Validación
+Sistema
+Tras la carga, el sistema debe ejecutar un algoritmo que valide si el trazado del archivo GPX se corresponde con la geometría de la RUTA oficial seleccionada, permitiendo un margen de error geográfico (ej. 50 metros).
+El sistema devuelve "Validación Exitosa" o "Ruta No Coincidente".
+RF.3.3
+Registro Final
+Usuario
+Si la validación es exitosa, el sistema debe registrar la actividad en la tabla REGISTRO_RUTA con la fecha, el tiempo total empleado y los puntos brutos obtenidos.
+Se crea una nueva entrada en la BBDD, y el usuario recibe un mensaje de confirmación de puntos.
+RF.3.4
+Notificación de Logros
+Sistema
+Tras registrar una ruta, el sistema debe verificar si la nueva actividad ha cumplido con los criterios de cualquier LOGRO pendiente de desbloquear y notificar al usuario.
+Si un logro es desbloqueado, se inserta un registro en la tabla LOGRO_USUARIO.
+RF.4: Módulo de Gamificación (Puntos, Logros, Nivel)
+ID
+Nombre del Requisito
+Actor
+Descripción Detallada
+Criterio de Aceptación
+RF.4.1
+Cálculo de Puntos
+Sistema
+La fórmula de puntuación debe ser determinista, basada en: Puntos Obtenidos = (Puntos Base de la Ruta) * (Factor de Dificultad) * (Modificador de Reto Activo).
+El cálculo se ejecuta correctamente en el back-end tras la validación de la ruta.
+RF.4.2
+Actualización de Nivel
+Sistema
+Los puntos_totales del usuario deben determinar su nivel actual mediante una tabla de experiencia predefinida (ej. 1000 puntos = Nivel 2).
+El campo nivel del USUARIO se actualiza automáticamente al superar el umbral.
+RF.4.3
+Gestión de Logros
+Usuario
+El usuario debe poder visualizar una galería de todos los logros disponibles (incluyendo los bloqueados) y ver su progreso hacia ellos.
+Los logros bloqueados muestran un candado y una barra de progreso (ej. 3/10 rutas completadas).
+RF.5: Módulo de Retos Comunitarios y Clasificaciones
+ID
+Nombre del Requisito
+Actor
+Descripción Detallada
+Criterio de Aceptación
+RF.5.1
+Listado de Retos
+Usuario
+El sistema debe mostrar los retos comunitarios activos, con su objetivo global, progreso actual (barra de porcentaje) y el tiempo restante para finalizar.
+La barra de progreso se actualiza con la suma de los progreso_individual de todos los participantes.
+RF.5.2
+Contribución Automática
+Sistema
+Cualquier actividad de REGISTRO_RUTA que califique para un RETO_COMUNITARIO activo debe actualizar automáticamente el PROGRESO_RETO del usuario.
+El campo progreso_individual en la tabla PROGRESO_RETO aumenta.
+RF.5.3
+Clasificación Global
+Visitante/Usuario
+El sistema debe mostrar una clasificación global (Leaderboard) basada en puntos_totales, limitada a los 10 o 20 primeros para visitantes.
+El ranking se ordena por puntos_totales de forma descendente.
+RF.5.4
+Clasificación Detallada
+Usuario
+El usuario registrado debe poder ver su posición exacta en el ranking general y en el ranking específico de cada RETO_COMUNITARIO.
+El sistema ejecuta consultas eficientes para calcular la posición del usuario en relación con el total.
+RF.6: Módulo de Administración (CRUD)
+ID
+Nombre del Requisito
+Actor
+Descripción Detallada
+Criterio de Aceptación
+RF.6.1
+CRUD de Rutas
+Administrador
+El administrador debe poder Crear, Revisar, Update (modificar) y Delete (eliminar) rutas, incluyendo la subida del archivo GeoJSON/GPX para definir el trazado.
+Se proporciona un formulario completo para la gestión de rutas y el mapa se actualiza tras la subida del archivo.
+RF.6.2
+Gestión de Usuarios
+Administrador
+El administrador debe poder buscar usuarios, cambiar su rol (si se desea), y bloquear/desactivar cuentas.
+Un usuario bloqueado no puede iniciar sesión ni registrar actividad.
+RF.6.3
+Creación de Retos
+Administrador
+El administrador debe poder crear nuevos RETO_COMUNITARIOs, definiendo sus fechas, el objetivo y la recompensa.
+La BBDD almacena correctamente el nuevo reto, el cual aparece en el dashboard de todos los usuarios a partir de la fecha_inicio.
+RF.6.4
+Monitorización
+Administrador
+El Panel Admin debe mostrar métricas clave: Usuarios registrados, Rutas validadas en el último mes, y el progreso de los retos activos.
+Se muestran gráficos o contadores que reflejan los datos en tiempo real.
+4.3. Requisitos No Funcionales (RNF)
+Los requisitos no funcionales definen los criterios de calidad que el sistema debe cumplir.
+RNF.1: Usabilidad y Experiencia de Usuario (UX/UI)
+ID
+Requisito
+Descripción y Métrica
+RNF.1.1
+Interfaz Intuitiva
+El diseño debe seguir los principios de Material Design o una guía de estilo coherente. Métrica: Tarea de Registro de Ruta completada con éxito por el 90% de los usuarios beta sin asistencia externa.
+RNF.1.2
+Diseño Responsive
+La aplicación debe ser completamente funcional y legible en dispositivos móviles (smartphones y tabletas), ya que el principal uso ocurrirá en campo.
+RNF.1.3
+Accesibilidad (A11y)
+La aplicación debe cumplir con el nivel A de las Pautas de Accesibilidad al Contenido Web (WCAG 2.1), incluyendo la navegación con teclado y el contraste de colores adecuado.
+RNF.1.4
+Feedback de Sistema
+El sistema debe proporcionar una retroalimentación clara e inmediata para todas las acciones del usuario (ej. animaciones de logro, mensajes de error específicos al fallar la validación de ruta).
+RNF.2: Rendimiento y Escalabilidad
+ID
+Requisito
+Descripción y Métrica
+RNF.2.1
+Tiempo de Carga
+La carga inicial de cualquier página principal (Dashboard, Catálogo) no debe exceder los 3 segundos en una conexión 4G. Métrica: Google PageSpeed Insights > 85.
+RNF.2.2
+Latencia de Consulta
+La consulta de la Clasificación Global (RF.5.3) debe resolverse en menos de 1 segundo, incluso con 5,000 usuarios en la BBDD (mediante indexación eficiente).
+RNF.2.3
+Capacidad Concurrente
+El sistema debe soportar un mínimo de 500 usuarios concurrentes realizando consultas o registrando actividad sin degradación notable del servicio.
+RNF.2.4
+Procesamiento de Archivos
+El algoritmo de Validación de Ruta debe procesar y validar un archivo GPX estándar (ej. 10.000 puntos) en menos de 5 segundos.
+RNF.3: Seguridad
+ID
+Requisito
+Descripción y Medida
+RNF.3.1
+Protección de Credenciales
+Todas las contraseñas de usuario deben ser almacenadas mediante un algoritmo de hashing fuerte (ej. bcrypt o Argon2).
+RNF.3.2
+Prevención de Vulnerabilidades
+El sistema debe protegerse contra los 10 riesgos de seguridad más críticos de OWASP, incluyendo SQL Injection, Cross-Site Scripting (XSS) y Cross-Site Request Forgery (CSRF).
+RNF.3.3
+Autorización por Rol
+El acceso al Panel de Administración (RF.6.X) debe ser estrictamente denegado a cualquier usuario cuyo rol no sea Administrador.
+RNF.3.4
+Comunicaciones Seguras
+Toda la comunicación entre el cliente y el servidor debe realizarse mediante el protocolo HTTPS (SSL/TLS).
+RNF.4: Mantenibilidad, Tecnología y Operacional
+ID
+Requisito
+Descripción y Medida
+RNF.4.1
+Tecnología del Backend
+El sistema debe ser desarrollado utilizando el framework Laravel (o equivalente PHP) y una base de datos relacional (MySQL/MariaDB).
+RNF.4.2
+Código Modular
+El código debe seguir el patrón de diseño MVC (Modelo-Vista-Controlador), con documentación en línea de las funciones críticas.
+RNF.4.3
+Geolocalización
+El sistema debe utilizar una API de mapas robusta y bien documentada (ej. Google Maps Platform) para la visualización y geocodificación de las rutas.
+RNF.4.4
+Cumplimiento Legal (RGPD)
+El sistema debe manejar los datos personales y de ubicación de los usuarios de acuerdo con el Reglamento General de Protección de Datos (RGPD) de la Unión Europea, incluyendo la opción de eliminación de la cuenta.
+5. MODELO ENTIDAD / RELACIÓN
+Explicación Detallada del Modelo Entidad-Relación 
+El Modelo Entidad-Relación (MER) sirve como el plano lógico de la base de datos relacional de la aplicación, definiendo la estructura de datos que soporta todas las funcionalidades de gamificación, registro de actividad y gestión de contenido.
+ Entidades Fundamentales (Maestras)
+Estas entidades contienen la información base y estática del sistema.
+. USUARIO
+Propósito: Almacenar la identidad y las métricas de rendimiento de cada persona registrada.
+Atributos Clave:
+PK: id_usuario: Identificador único y primario de cada usuario.
+email y password: Credenciales de acceso para el sistema de autenticación.
+Puntos_totales y nivel: Atributos derivados de la gamificación, esenciales para las clasificaciones y la motivación.
+Justificación de Existencia: Es el actor principal del sistema, y la centralización de sus métricas de gamificación en esta tabla permite consultas rápidas para actualizar clasificaciones en tiempo real.
+ ADMINISTRADOR
+Propósito: Especificar qué usuarios tienen privilegios de gestión (creación de rutas, gestión de usuarios, etc.).
+Atributos Clave:
+PK, FK: id_usuario: Actúa como clave primaria y foránea, manteniendo la coherencia con la tabla USUARIO.
+Relación: 1:0/1 con USUARIO. Esto implica que un registro en USUARIO puede tener Cero o Un registro asociado en ADMINISTRADOR, pero un registro en ADMINISTRADOR debe corresponder a Un único USUARIO existente. Se opta por una tabla separada para mantener la modularidad y facilitar la gestión de roles.
+RUTA
+Propósito: Catalogar y describir las rutas oficiales de senderismo en Asturias.
+Atributos Clave:
+PK: id_ruta: Identificador único de cada itinerario.
+Distancia_km, desnivel_m, dificultad: Datos cruciales para calcular la puntuación base de la ruta y permitir el filtrado por parte del usuario.
+Coordenadas_json: Almacena el trazado geográfico (polyline) de la ruta. El uso de JSON o un tipo GEOMETRY permite la visualización y validación del recorrido.
+Relación: 1:N con ADMINISTRADOR. Un ADMINISTRADOR (1) puede crear Muchas (N) RUTAs, lo que asegura que cada ruta en el catálogo tenga una fuente de validación única y responsable (admin_id como FK en RUTA).
+ LOGRO
+Propósito: Definir los logros (metas a largo plazo) que impulsan la retención del usuario.
+Atributos Clave:
+PK: id_logro: Identificador único del logro.
+criterio_puntos, criterio_rutas: Almacenan los valores numéricos que el sistema utiliza para determinar si el usuario ha desbloqueado la medalla (e.g., completar 10 rutas o acumular 5000 puntos).
+Justificación de Existencia: Desacopla la lógica de las recompensas de la tabla USUARIO, permitiendo al administrador añadir o modificar logros sin alterar la estructura principal de la base de datos.
+RETO_COMUNITARIO
+Propósito: Definir los desafíos sociales y temporales que fomentan la interacción comunitaria.
+Atributos Clave:
+PK: id_reto: Identificador único del desafío.
+fecha_inicio y fecha_fin: Definen el ciclo de vida del reto.
+objetivo_global: El valor a alcanzar colectivamente (e.g., 10000 km).
+Justificación de Existencia: Permite la gestión de campañas de gamificación con fecha límite, vital para generar un sentido de urgencia y trabajo en equipo.
+ Entidades de Interrelación (Relaciones N:M)
+Estas entidades son fundamentales para el almacenamiento de datos transaccionales, ya que las interacciones de actividad y gamificación son siempre de Muchos a Muchos (N:M). Utilizan Claves Primarias Compuestas que garantizan la unicidad de cada registro.
+REGISTRO_RUTA (N:M entre USUARIO y RUTA)
+PK Compuesta: (usuario_id, ruta_id, fecha_completado). La fecha_completado se incluye en la clave para permitir que un usuario registre la misma ruta varias veces.
+Justificación: Almacena la evidencia de la actividad. tiempo_min y puntos_obtenidos son cruciales, ya que registran el rendimiento específico de esa transacción y contribuyen a las métricas del usuario.
+ LOGRO_USUARIO (N:M entre USUARIO y LOGRO)
+PK Compuesta: (usuario_id, logro_id). Una vez que un usuario obtiene un logro, no puede volver a obtenerlo.
+Justificación: Registra el historial de logros obtenidos, manteniendo la trazabilidad con el atributo fecha_desbloqueo.
+PROGRESO_RETO (N:M entre USUARIO y RETO_COMUNITARIO)
+PK Compuesta: (reto_id, usuario_id). Un usuario solo tiene un registro de progreso por reto activo.
+Justificación: Almacena la contribución individual (progreso_individual) del usuario al reto colectivo. Este valor se actualiza tras cada REGISTRO_RUTA que califique para el reto.
+3. Síntesis de Cardinalidades y Coherencia
+El modelo garantiza la integridad referencial mediante las siguientes reglas:
+Relación
+Lógica de la Plataforma
+Cardinalidad
+Implementación
+Creación de Rutas
+Una ruta debe ser creada por un único administrador, pero un administrador puede crear varias rutas.
+1:N
+FK admin_id en RUTA.
+Actividad
+Un usuario registra múltiples rutas, y una ruta es registrada por múltiples usuarios.
+N:M
+Resuelta por REGISTRO_RUTA.
+Recompensas
+Un logro lo consiguen muchos usuarios, y un usuario consigue múltiples logros.
+N:M
+Resuelta por LOGRO_USUARIO.
+Contribución
+Un reto tiene la participación de muchos usuarios, y un usuario contribuye a múltiples retos (simultáneos o secuenciales).
+N:M
+Resuelta por PROGRESO_RETO.
+Modelo relacional
+El diagrama adjunto ilustra la estructura de la base de datos relacional del proyecto, donde cada recuadro representa una tabla, y las líneas indican las relaciones de integridad referencial a través de las Claves Foráneas (FK).
+5.1. Paso del Modelo Entidad-Relación al Modelo Relacional
+La transición del modelo conceptual (E/R) al modelo lógico (Relacional) es un proceso crítico para garantizar que la implementación física en MariaDB/MySQL sea eficiente. Este proceso no es una mera traducción, sino una aplicación de reglas de normalización y álgebra relacional.
+5.1.1. Reglas de Transformación Aplicadas
+Para la obtención del Modelo Relacional de "Reto Asturias Activa", se han seguido las siguientes reglas fundamentales:
+A. Transformación de Entidades Fuertes
+Cada entidad definida en el modelo conceptual se convierte en una relación (tabla). Los atributos pasan a ser columnas y el identificador principal se convierte en la Clave Primaria (PK), asegurando la unicidad de cada registro.
+Ejemplo: La entidad RUTA genera la tabla RUTA, donde id_ruta garantiza que no existan dos rutas idénticas en el sistema.
+B. Transformación de Relaciones 1:N (Propagación de Clave)
+En las relaciones donde una entidad participa con cardinalidad máxima 1 y la otra con N, se ha optado por la propagación de clave.
+Justificación: Esto evita la creación de tablas adicionales innecesarias, mejorando el rendimiento de las consultas (JOINs). Por ejemplo, la clave del ADMINISTRADOR se propaga a RUTA para saber quién dio de alta dicho recurso.
+C. Transformación de Relaciones N:M (Tablas Intermedias)
+Dada la naturaleza de la gamificación, muchas relaciones son "Muchos a Muchos". Estas se transforman en una nueva tabla cuya clave primaria es la unión de las claves primarias de las entidades que relaciona.
+Caso crítico: La tabla REGISTRO_RUTA. No solo une USUARIO y RUTA, sino que incluye atributos propios del evento (tiempo empleado, puntos ganados), lo que la convierte en una entidad por derecho propio en el modelo lógico.
+D. Tratamiento de la Generalización/Especialización
+Se ha optado por el modelo de "Tabla para la subentidad" para el caso de ADMINISTRADOR.
+Decisión técnica: Solo los usuarios con privilegios tienen entrada en esta tabla. Esto permite que la tabla USUARIO sea ligera y rápida para el acceso general, mientras que los datos administrativos están segregados.
+5.2. Diccionario de Datos Detallado
+A continuación, se describen las especificaciones técnicas de cada tabla, definiendo tipos de datos, restricciones y propósitos.
+5.2.1. Tabla: USUARIO
+Almacena la información de perfil y el estado de gamificación de los participantes.
+Campo
+Tipo
+Nulo
+Descripción
+id_usuario
+INT (PK)
+No
+Identificador único autoincremental.
+nombre
+VARCHAR(100)
+No
+Nombre de visualización del usuario.
+email
+VARCHAR(150)
+No
+Correo electrónico (Índice Único para login).
+password
+VARCHAR(255)
+No
+Hash de la contraseña (Bcrypt/Argon2).
+puntos_totales
+INT
+No
+Acumulado de puntos (Default: 0).
+nivel
+INT
+No
+Nivel calculado según puntos.
+fecha_registro
+TIMESTAMP
+No
+Fecha de creación de la cuenta.
+5.2.2. Tabla: RUTA
+Contiene los activos geográficos y técnicos de las rutas de senderismo.
+Campo
+Tipo
+Nulo
+Descripción
+id_ruta
+INT (PK)
+No
+Identificador de la ruta.
+nombre
+VARCHAR(150)
+No
+Nombre descriptivo de la ruta.
+distancia_km
+DECIMAL(5,2)
+No
+Longitud total en kilómetros.
+desnivel_m
+INT
+No
+Desnivel positivo acumulado.
+dificultad
+ENUM
+No
+Valores: 'Baja', 'Media', 'Alta'.
+coordenadas_json
+JSON
+No
+Geometría del trazado (puntos GPS).
+id_admin
+INT (FK)
+No
+Referencia al administrador creador.
+5.2.3. Tabla: REGISTRO_RUTA (Histórico de actividad)
+Tabla de interrelación N:M que registra cada vez que un usuario completa una ruta.
+Campo
+Tipo
+Nulo
+Descripción
+id_usuario
+INT (PK, FK)
+No
+Referencia al usuario.
+id_ruta
+INT (PK, FK)
+No
+Referencia a la ruta realizada.
+fecha_hora
+DATETIME (PK)
+No
+Momento exacto de la validación.
+tiempo_min
+INT
+No
+Tiempo empleado por el usuario.
+puntos_obtenidos
+INT
+No
+Puntos brutos sumados tras validación.
+6. DIAGRAMA DE PROCESOS
+6.1 Diagrama de clases
+Explicación del Diagrama de Clases
+Clases principales (entidades del negocio):
+Usuario: Representa a los usuarios del sistema (estándar y administrador). Incluye métodos para autenticación, gestión de perfil y cálculo de puntos.
+Ruta: Representa los itinerarios disponibles. Incluye métodos para CRUD, filtrado y gestión de visitas.
+Logro: Representa las medallas y reconocimientos. Incluye lógica para verificar desbloqueos.
+Reto: Representa los desafíos comunitarios. Incluye métodos para gestionar inscripciones y calcular progresos.
+Categoría y ZonaGeografica: Clases de clasificación con métodos básicos de gestión.
+Comentario: Gestiona las valoraciones de usuarios sobre rutas, incluyendo moderación.
+Clases de relación (muchos a muchos):
+RutaCompletada: Representa la relación entre Usuario y Ruta cuando se completa una actividad.
+LogroObtenido: Vincula usuarios con logros desbloqueados.
+Participacion: Gestiona la inscripción y progreso de usuarios en retos.
+Clases de servicio/controlador:
+Sistema: Clase singleton que gestiona operaciones globales del sistema (autenticación, rankings, backups).
+GestorGamificacion: Clase especializada en la lógica de gamificación (cálculo de puntos, asignación de logros, rankings).
+6.2. Diagrama de Casos de Uso
+6.3 Diagrama de casos de uso por actor
+Actor: Visitante (usuario no registrado)
+Caso de Uso
+Visualizar Rutas
+Descripción
+El visitante puede explorar el catálogo de rutas precargadas sin necesidad de registro.
+Precondiciones
+Acceso a la aplicación web.
+Flujo Principal
+1. El visitante accede a la página principal.2. El sistema muestra el catálogo de rutas precargadas.3. El visitante puede navegar por las rutas disponibles.
+Postcondiciones
+El visitante visualiza información básica de las rutas.
+Flujos Alternativos
+Si no hay rutas disponibles, se muestra un mensaje informativo.
+Caso de Uso
+Buscar y Filtrar Rutas
+Descripción
+Permite buscar rutas por nombre o aplicar filtros (dificultad, zona, distancia, tipo).
+Precondiciones
+Existencia de rutas en el sistema.
+Flujo Principal
+1. El visitante introduce criterios de búsqueda.2. El sistema aplica filtros.3. Se muestran resultados coincidentes.
+Postcondiciones
+Lista filtrada de rutas.
+Caso de Uso
+Ver Detalles de Ruta
+Descripción
+Muestra información completa de una ruta: descripción, mapa interactivo, dificultad, desnivel, etc.
+Precondiciones
+Selección de una ruta específica.
+Flujo Principal
+1. El usuario selecciona una ruta.2. El sistema carga los detalles.3. Se muestra el mapa con Leaflet.js/Google Maps.4. Se presentan estadísticas y comentarios.
+Postcondiciones
+Información completa visible.
+Relaciones
+Include: Integración con API de mapas.
+Actor: Usuario Estándar (usuario registrado)
+Además de los casos de uso del visitante:
+Caso de Uso
+Registrarse
+Descripción
+Crear una nueva cuenta en el sistema.
+Precondiciones
+Ninguna.
+Flujo Principal
+1. El usuario accede al formulario de registro.2. Introduce nombre, apellidos, email y contraseña.3. El sistema valida los datos.4. Se crea la cuenta y se cifra la contraseña.5. El usuario recibe confirmación.
+Postcondiciones
+Nueva cuenta creada en estado activo.
+Flujos Alternativos
+3a. Si el email ya existe, se muestra error.3b. Si la contraseña es débil, se solicita una más segura.
+Caso de Uso
+Iniciar Sesión
+Descripción
+Autenticarse en el sistema.
+Precondiciones
+Cuenta registrada y activa.
+Flujo Principal
+1. El usuario introduce email y contraseña.2. El sistema valida las credenciales.3. Se crea la sesión.4. Redirige al panel personal.
+Postcondiciones
+Usuario autenticado con sesión activa.
+Flujos Alternativos
+2a. Credenciales incorrectas: mensaje de error.2b. Cuenta desactivada: mensaje informativo.
+Caso de Uso
+Marcar Ruta Completada
+Descripción
+Registrar la realización de una ruta para sumar puntos.
+Precondiciones
+Usuario autenticado, ruta existente.
+Flujo Principal
+1. El usuario selecciona "Marcar como completada".2. Puede añadir tiempo realizado y notas.3. El sistema valida que no esté ya completada.4. Se registra en la base de datos.5. Se calculan y suman puntos según dificultad.6. Se verifica si desbloquea nuevos logros.
+Postcondiciones
+Ruta registrada en historial, puntos actualizados, posibles logros desbloqueados.
+Relaciones
+Include: UC8 (Consultar Puntos y Logros).
+Caso de Uso
+Ver Historial Personal
+Descripción
+Consultar todas las rutas completadas por el usuario.
+Precondiciones
+Usuario autenticado.
+Flujo Principal
+1. El usuario accede a su perfil.2. Selecciona "Historial".3. El sistema muestra lista de rutas completadas con fechas y tiempos.
+Postcondiciones
+Historial visible.
+Caso de Uso
+Consultar Puntos y Logros
+Descripción
+Ver puntos acumulados y logros desbloqueados.
+Precondiciones
+Usuario autenticado.
+Flujo Principal
+1. El usuario accede a su perfil.2. El sistema muestra puntos totales.3. Se listan logros obtenidos con fechas.4. Se muestran logros bloqueados y su progreso.
+Postcondiciones
+Información de gamificación visible.
+Caso de Uso
+Ver Ranking
+Descripción
+Consultar clasificación de usuarios por puntos.
+Precondiciones
+Existencia de usuarios con actividad.
+Flujo Principal
+1. El usuario accede a "Rankings".2. Selecciona periodo (semanal/mensual).3. El sistema muestra top usuarios ordenados por puntos.
+Postcondiciones
+Ranking visible con posición del usuario destacada.
+Caso de Uso
+Participar en Reto
+Descripción
+Inscribirse en un desafío comunitario activo.
+Precondiciones
+Usuario autenticado, reto activo disponible.
+Flujo Principal
+1. El usuario explora retos disponibles.2. Selecciona "Participar".3. El sistema registra la inscripción.4. Se inicializa el progreso en 0%.
+Postcondiciones
+Usuario inscrito en el reto.
+Relaciones
+Include: UC11 (Ver Progreso en Reto).
+Actor: Administrador
+El administrador tiene acceso a todos los casos de uso del usuario estándar más los siguientes exclusivos:
+Caso de Uso
+Gestionar Rutas
+Descripción
+Acceder al panel de gestión completa de rutas.
+Precondiciones
+Usuario con rol administrador autenticado.
+Flujo Principal
+1. El administrador accede al panel admin.2. Selecciona "Gestión de Rutas".3. Se muestra lista completa de rutas (precargadas y añadidas).
+Postcondiciones
+Interfaz de gestión disponible.
+Caso de Uso
+Crear/Editar/Eliminar Ruta
+Descripción
+Operaciones CRUD completas sobre rutas.
+Precondiciones
+Acceso a gestión de rutas.
+Flujo Principal - Crear
+1. El admin selecciona "Nueva Ruta".2. Completa formulario con todos los datos.3. Sube coordenadas GPS.4. Confirma creación.5. El sistema valida y guarda la ruta.
+Flujo Principal - Editar
+1. Selecciona ruta existente.2. Modifica campos necesarios.3. Guarda cambios.
+Flujo Principal - Eliminar
+1. Selecciona ruta.2. Confirma eliminación.3. El sistema verifica que no tenga dependencias críticas.4. Se elimina.
+Postcondiciones
+Base de datos actualizada.
+Caso de Uso
+Gestionar Rutas Precargadas
+Descripción
+Actualizar o reemplazar las rutas iniciales del sistema.
+Precondiciones
+Acceso admin.
+Flujo Principal
+1. El admin accede a "Rutas Precargadas".2. Revisa el catálogo inicial.3. Puede actualizar descripciones, coordenadas o imágenes.4. Guarda cambios.
+Postcondiciones
+Rutas precargadas actualizadas.
+Caso de Uso
+Gestionar Retos
+Descripción
+Administración completa de retos comunitarios.
+Precondiciones
+Rol administrador.
+Relaciones
+Caso de Uso
+Moderar Comentarios
+Descripción
+Revisar y aprobar/rechazar comentarios de usuarios.
+Precondiciones
+Existencia de comentarios pendientes.
+Flujo Principal
+1. El admin accede a "Moderación".2. Revisa lista de comentarios pendientes.3. Lee contenido y contexto.4. Aprueba o rechaza cada comentario.5. Si rechaza, puede eliminar permanentemente.
+Postcondiciones
+Comentarios moderados, visibles solo los aprobados.
+Caso de Uso
+Gestionar Usuarios
+Descripción
+Administración de cuentas de usuario.
+Flujo Principal
+1. El admin accede a lista de usuarios.2. Puede buscar por nombre o email.3. Puede activar/desactivar cuentas.4. Puede ver estadísticas individuales.
+Postcondiciones
+Gestión efectiva de la comunidad.
+Caso de Uso
+Ver Estadísticas Globales
+Descripción
+Dashboard con métricas del sistema.
+Flujo Principal
+1. El admin accede a "Estadísticas".2. El sistema muestra:- Total usuarios activos- Rutas más populares- Logros más obtenidos- Participación en retos- Gráficos de evolución temporal
+Postcondiciones
+Visión global del funcionamiento del sistema.
+ DISEÑO DE INTERFAZ
+7.1. Diagramación y prototipado del diseño gráfico de la interfaz
+Este apartado describe el proceso iterativo de diseño seguido para transformar los requisitos funcionales en una interfaz visual funcional, intuitiva y atractiva. Se ha seguido una metodología de diseño centrada en el usuario, dividida en tres fases de fidelidad creciente.
+7.1.1. Metodología de Diseño: El Enfoque Iterativo
+Para garantizar que la interfaz de "Reto Asturias Activa" sea usable en entornos de movilidad (senderismo), se ha aplicado un ciclo de diseño basado en:
+Abstracción: Definición de flujos y estructuras sin carga visual.
+Validación: Comprobación de que la jerarquía de información es correcta.
+Refinamiento: Aplicación de la guía de estilos y componentes finales.
+7.1.2. Prototipado de Baja Fidelidad (Wireframes)
+Los wireframes se han centrado en la arquitectura de la información y la disposición de los elementos en pantalla, omitiendo colores y tipografías para evitar distracciones estéticas.
+Objetivo: Definir la ubicación de los elementos de navegación (menús, botones de acción) y la jerarquía de los datos de gamificación (puntos y niveles).
+Decisiones de diseño: * Uso de una cuadrícula (grid) de 12 columnas para la versión web y una columna única con márgenes de 16px para la versión móvil.
+Implementación de una Navigation Bar inferior en dispositivos móviles para facilitar el alcance del pulgar mientras el usuario camina.
+Priorización de la zona superior para el "Estado del Usuario" (puntos y nivel actual), asegurando que el feedback de gamificación sea siempre visible.
+7.1.3. Prototipado de Media Fidelidad (Mockups Interactivos)
+En esta fase, se introducen las interacciones básicas y se definen los componentes siguiendo la Guía de Estilos (punto 7.2).
+Interactividad: Se han definido los estados de los botones (hover, active, disabled) y las transiciones entre pantallas (desplazamientos laterales para menús y fades para carga de datos).
+Componentes Clave:
+Cards de Rutas: Diseñadas para presentar la información técnica (distancia, tiempo, dificultad) de forma escaneable.
+Modales de Validación: Ventanas emergentes que guían al usuario durante la subida del archivo GPX, proporcionando mensajes claros de error o éxito.
+Dashboard Visual: Uso de gráficos circulares para mostrar el progreso de los retos comunitarios, permitiendo una comprensión inmediata del esfuerzo colectivo restante.
+7.1.4. Prototipado de Alta Fidelidad y Diseño Visual
+El prototipo de alta fidelidad representa la apariencia final del producto. Se ha puesto especial énfasis en el Diseño Emocional y la Accesibilidad.
+A. Aplicación de la Psicología del Color y Tipografía
+Se ha aplicado la paleta de colores definida anteriormente para generar una conexión psicológica con el entorno:
+El Verde Bosque se utiliza en acciones afirmativas y de éxito, reforzando la sensación de logro en la naturaleza.
+La tipografía Montserrat se utiliza con pesos Bold para encabezados, mejorando la legibilidad en exteriores donde la luz solar puede dificultar la visión de la pantalla.
+B. Diseño Responsivo y Adaptabilidad
+Dado que Asturias cuenta con una orografía compleja y condiciones climáticas variables, la interfaz se ha diseñado bajo el principio de "Mobile First":
+Legibilidad: Los tamaños de fuente y botones se han sobredimensionado ligeramente (mínimo 44x44px para áreas táctiles) para facilitar su uso con manos frías o húmedas.
+Contraste: Se ha verificado que el ratio de contraste entre texto y fondo cumpla con el estándar WCAG 2.1 AA (mínimo 4.5:1), garantizando que la información sea legible bajo luz solar directa.
+C. Gamificación Visual (Visual Feedback)
+Se han diseñado elementos visuales específicos para reforzar el sistema de recompensas:
+Microinteracciones: Pequeñas animaciones al ganar puntos o subir de nivel que aumentan la satisfacción del usuario.
+Barras de Progreso Dinámicas: Cambian de color sutilmente a medida que el usuario se acerca al objetivo de un reto, pasando de tonos neutros a colores de acento (Naranja Amanecer).
+7.2 Mapa de Navegación
+El mapa de navegación muestra la estructura completa del sitio y los flujos de interacción entre páginas.
+Descripción de Flujos de Navegación
+Flujo de Usuario No Registrado (Visitante):
+Entra a la página principal
+Puede explorar el catálogo de rutas (rutas precargadas visibles)
+Puede ver detalles de rutas con mapas
+Puede consultar rankings públicos
+Puede ver retos disponibles
+Para interactuar (comentar, completar rutas), debe registrarse o iniciar sesión
+Flujo de Registro y Primera Experiencia:
+Usuario accede a "Registrarse"
+Completa formulario con datos básicos
+El sistema crea la cuenta
+Redirige automáticamente a su perfil
+Muestra tutorial opcional de primeros pasos
+Puede empezar a explorar y marcar rutas completadas
+Flujo de Usuario Registrado:
+Inicia sesión con email y contraseña
+Accede a su perfil personal con estadísticas
+Puede navegar a: 
+Historial de rutas completadas
+Logros desbloqueados
+Retos en los que participa
+Editar su perfil
+Al visualizar una ruta, puede: 
+Marcarla como completada (suma puntos)
+Dejar comentarios y valoraciones
+Al completar rutas, desbloquea logros automáticamente
+Puede inscribirse en retos activos y ver su progreso
+Flujo de Administrador:
+Inicia sesión con credenciales de admin
+Accede al Dashboard administrativo
+Desde el panel puede: 
+Gestión de Rutas: 
+Ver todas las rutas (incluidas precargadas)
+Crear nuevas rutas
+Editar rutas existentes
+Eliminar rutas (con confirmación)
+Gestión de Retos: 
+Crear nuevos desafíos
+Activar/desactivar retos
+Finalizar retos y asignar recompensas
+Moderación: 
+Revisar comentarios pendientes
+Aprobar o rechazar contenido
+Gestión de Usuarios: 
+Ver lista de usuarios
+Activar/desactivar cuentas
+Ver estadísticas individuales
+Gestión de Logros: 
+Crear nuevos logros
+Modificar criterios y recompensas
+Estadísticas: 
+Ver métricas globales del sistema
+Rutas más populares
+Participación en retos
+Backups: 
+Crear copias de seguridad
+Restaurar versiones anteriores
+Configuración: 
+Parámetros generales del sistema
+Navegación Global (Presente en todas las páginas):
+Header/Navbar: Siempre visible con enlaces principales 
+Logo (vuelve a Home)
+Rutas
+Retos
+Ranking
+Mi Perfil (si autenticado) / Iniciar Sesión (si no)
+Footer: Información legal, contacto, redes sociales
+Guía de estilos
+La Guía de Estilos define los elementos visuales primarios de la plataforma, asegurando una experiencia de usuario (UX) consistente y alineada con los valores de naturaleza, actividad, y Asturias.
+Branding y Paleta de Colores
+La paleta se inspira en los elementos clave del paisaje asturiano: el verde de las montañas, el azul del Cantábrico y el gris de las cumbres rocosas.
+Color
+Nombre
+Código Hexadecimal
+Propósito en la UI
+Primario (Montaña)
+Verde Bosque
+#1E5945
+Botones principales (CTAs), navegación activa, elementos de éxito/logro. Representa la naturaleza y la vitalidad.
+Secundario (Mar)
+Azul Océano
+#0072B5
+Títulos, enlaces, progress bars del reto comunitario. Representa la tecnología y la conexión.
+Acento (Cima)
+Naranja Amanecer
+#FF7C00
+Elementos de gamificación destacados: puntos, rankings, notificaciones urgentes. Capta la atención.
+Neutro Base (Roca)
+Gris Claro
+#F5F5F5
+Fondos de página, tarjetas, separadores. Mejora la legibilidad del texto oscuro.
+Neutro Principal (Niebla)
+Gris Oscuro
+#333333
+Texto principal, encabezados, iconos. Alto contraste para legibilidad.
+Tipografía
+Se elige una tipografía que sea legible en entornos digitales y que proyecte un sentimiento de modernidad y claridad.
+Categoría
+Fuente Elegida (Ejemplo)
+Estilo y Uso
+Principal (Títulos)
+Montserrat (o similar sans-serif moderno)
+Uso en encabezados (H1, H2) y elementos de branding. Transmite solidez y modernidad.
+Cuerpo de Texto
+Roboto o Open Sans (o similar sans-serif estándar)
+Uso para párrafos, botones, navegación y footers. Máxima legibilidad en cuerpos de texto largos y en dispositivos móviles.
+Elemento
+Tamaño (px - Base Desktop)
+Color
+H1 (Título principal)
+36px - 42px
+Gris Oscuro (#333333)
+H2 (Sección)
+24px - 28px
+Azul Océano (#0072B5)
+Texto de Párrafo
+16px
+Gris Oscuro (#333333)
+Puntos de Usuario
+20px - 24px
+Naranja Amanecer (#FF7C00)
+ Iconografía y Elementos de Gamificación
+Los iconos deben ser simples, de línea clara y deben integrarse en la estética natural del proyecto.
+Estilo: Iconos de línea (outline) cuando están inactivos y rellenos (solid) cuando están activos (ej. botón de navegación seleccionado).
+Iconos Clave:
+Rutas: Símbolo de pin o montaña.
+Puntos/Ranking: Trofeo o llama/estrella.
+Logros/Medallas: Medallas con degradados sutiles (Verde/Azul).
+Administración: Engranaje o llave inglesa.
+Elemento
+Diseño y Justificación
+Botones Principales (CTAs)
+Fondo: Verde Bosque. Texto: Blanco. Esquinas ligeramente redondeadas. Proyectan seguridad y son el foco de la interacción.
+Botones Secundarios
+Fondo: Blanco o Gris Claro. Borde: Azul Océano (#0072B5). Usados para acciones menos prioritarias (Cancelar, Más información).
+Logros/Medallas
+Diseñados como objetos coleccionables, cada logro debe tener un diseño único (ej. una medalla con una Cruz de la Victoria para logros asturianos de alto nivel).
+Barra de Progreso
+Utilizar el color Azul Océano para el progreso, con el color Naranja Amanecer para destacar cuando el objetivo está cerca (ej. 80% completado).
+ Componentes Específicos de la Interfaz 
+Fichas y Tarjetas
+Las fichas son cruciales para mostrar el catálogo de rutas de forma ordenada.
+Estilo: Utilización de tarjetas rectangulares sobre un fondo Gris Claro.
+Contenido:
+Imagen de la ruta (foto panorámica).
+Título (Montserrat - H3).
+Etiquetas de dificultad (colores de acento para diferenciar: Rojo para Alta, Amarillo para Media, Verde Primario para Baja).
+Sombra suave para dar profundidad sin ser excesiva.
+Formularios e Inputs
+Estilo: Bordes sutiles y redondeados. Foco en la usabilidad.
+Estado de Foco: Cuando el usuario hace clic en un campo de texto, el borde se debe iluminar con el color Azul Océano  para indicar el campo activo.
+Mensajes de Error: Utilizar un color rojo fuerte estándar para los mensajes de 
+Mapas y Geolocalización
+Dado que la geolocalización es el núcleo del sistema, el mapa debe tener un estilo propio:
+Estilo del Mapa: Si es posible, utilizar un tema de mapa con baja saturación de colores, minimizando los elementos innecesarios (edificios urbanos, tráfico) para destacar la orografía y las rutas.
+Trazado de la Ruta: El “polyline” oficial debe ser grueso y claramente visible, utilizando el Verde Bosque para la ruta oficial y una línea punteada y más fina para el trazado del usuario (archivo GPX) durante la fase de validación.
+Tono de Comunicación (Voz y Tono)
+El tono de comunicación debe ser motivador, respetuoso y con un toque local.
+Voz: Activa, entusiasta, cercana y alentadora.
+Ejemplo de Éxito: "¡Enhorabuena, has conquistado [Nombre de la Ruta]! ¡+250 Puntos para la Clasificación!"
+Tono: Profesional, pero con un toque de camaradería y familiaridad asturiana, evitando el lenguaje excesivamente técnico a nivel de usuario final.
+Ejemplo de Error: "¡Uff! Parece que tu GPS se despistó. Vuelve a intentarlo, la montaña espera."
+8. MANUAL DE USUARIO
+8.1. Manual del Cliente (Usuario Final)
+Introducción
+Bienvenido a Reto Asturias Activa, tu compañero digital para descubrir y disfrutar de las mejores rutas de senderismo, ciclismo y actividades al aire libre en Asturias. Esta guía te ayudará a aprovechar al máximo todas las funcionalidades de la plataforma.
+Primeros Pasos
+Acceso a la Plataforma
+Abre tu navegador web (Google Chrome, Firefox, Edge o Safari)
+Escribe la dirección: www.retoasturiasactiva.es (URL ficticia para el ejemplo)
+Explora sin registrarte: Puedes visualizar el catálogo de rutas precargadas sin necesidad de crear una cuenta
+Registro de Nueva Cuenta
+Para acceder a todas las funcionalidades (completar rutas, ganar puntos, participar en retos):
+Haz clic en "Registrarse" en la esquina superior derecha
+Completa el formulario con tus datos: 
+Nombre y Apellidos
+Correo electrónico (será tu usuario de acceso)
+Contraseña (mínimo 8 caracteres, debe incluir letras y números)
+Acepta los Términos y Condiciones y la Política de Privacidad
+Haz clic en "Crear Cuenta"
+Recibirás un mensaje de confirmación y serás redirigido a tu perfil
+Recomendación de Seguridad: Usa una contraseña única y segura. Evita compartir tus credenciales con terceros.
+Iniciar Sesión
+Si ya tienes una cuenta:
+Haz clic en "Iniciar Sesión"
+Introduce tu correo electrónico y contraseña
+Haz clic en "Entrar"
+Serás redirigido a tu perfil personal
+¿Olvidaste tu contraseña? Haz clic en "¿Olvidaste tu contraseña?" y sigue las instrucciones para recuperarla.
+Explorar Rutas
+Catálogo de Rutas
+Haz clic en "Rutas" en el menú principal
+Verás el catálogo completo de rutas disponibles, incluyendo las rutas precargadas del sistema
+Cada ruta muestra: 
+Nombre de la ruta
+Imagen representativa
+Distancia en kilómetros
+Duración estimada
+Dificultad (Baja, Media, Alta, Muy Alta)
+Valoración promedio de usuarios
+Buscar y Filtrar Rutas
+Para encontrar la ruta perfecta:
+Usa el cuadro de búsqueda para buscar por nombre
+Aplica filtros: 
+Dificultad: Selecciona tu nivel (Baja, Media, Alta)
+Zona Geográfica: Picos de Europa, Costa Oriental, Occidente, Centro
+Tipo de Actividad: Senderismo, Ciclismo, Trail Running
+Distancia: Rango de kilómetros
+Haz clic en "Filtrar"
+Los resultados se actualizarán automáticamente
+Ver Detalles de una Ruta
+Al hacer clic en una ruta, accederás a su página de detalles:
+Descripción completa: Información sobre el recorrido, puntos de interés, recomendaciones
+Mapa interactivo: Visualiza el trazado de la ruta con Leaflet/Google Maps
+Datos técnicos: 
+Distancia exacta
+Desnivel positivo y negativo
+Punto de inicio y fin
+Coordenadas GPS
+Comentarios y valoraciones de otros usuarios
+Fotografías de la ruta (si están disponibles)
+Completar Rutas y Ganar Puntos
+Marcar una Ruta como Completada
+Una vez que hayas realizado una ruta física mente:
+Accede a los detalles de la ruta
+Haz clic en el botón "Marcar como Completada" (requiere iniciar sesión)
+Completa la información opcional: 
+Tiempo realizado: ¿Cuánto tardaste?
+Notas personales: Observaciones, experiencias, recomendaciones
+Haz clic en "Registrar Completación"
+El sistema te otorgará puntos según la dificultad: 
+Baja: 50 puntos
+Media: 100 puntos
+Alta: 200 puntos
+Muy Alta: 300 puntos
+Si desbloqueas algún logro al completar la ruta, recibirás una notificación inmediata
+Nota: Cada ruta solo puede completarse una vez para evitar duplicaciones de puntos.
+Sistema de Gamificación
+Puntos
+Los puntos se acumulan al completar rutas y participar en retos. Tu puntaje total se muestra en tu perfil y determina tu posición en el ranking.
+Logros y Medallas
+Los logros son reconocimientos que desbloqueas al alcanzar metas específicas:
+Ejemplos de Logros:
+ Primer Paso: Completa tu primera ruta (50 puntos extra)
+ Montañero: Completa 10 rutas (100 puntos extra)
+ Velocista: Recorre 100 km acumulados (150 puntos extra)
+ Explorador de Picos: Completa 5 rutas en Picos de Europa (200 puntos extra)
+ Leyenda Asturiana: Completa 50 rutas (500 puntos extra)
+Ver tus Logros:
+Accede a tu Perfil
+Navega a la sección "Mis Logros"
+Ver logros desbloqueados (en color) y bloqueados (en gris con candado)
+Cada logro muestra el progreso hacia su obtención
+Participar en Retos Comunitarios
+Ver Retos Disponibles
+Haz clic en "Retos" en el menú principal
+Verás los desafíos activos, próximos y finalizados
+Cada reto muestra: 
+Nombre y descripción
+Fechas de inicio y fin
+Objetivos: kilómetros a recorrer o rutas a completar
+Recompensa: puntos extra al completarlo
+Participantes actuales
+Inscribirse en un Reto
+Haz clic en el reto que te interese
+Lee los requisitos y objetivos
+Haz clic en "Participar"
+Confirma tu inscripción
+El reto aparecerá en "Mis Retos" dentro de tu perfil
+Seguir tu Progreso
+Accede a "Mis Retos" en tu perfil
+Verás una barra de progreso para cada reto activo
+El progreso se actualiza automáticamente al completar rutas
+Cuando alcances el 100%, el reto se marcará como Completado
+Recibirás los puntos de recompensa automáticamente
+Ejemplo de Reto:
+Desafío Otoño Asturiano
+Objetivo: Completar 5 rutas diferentes durante octubre
+Recompensa: 500 puntos extra
+Tu progreso: 3/5 rutas (60%)
+Rankings
+Consultar Clasificaciones
+Haz clic en "Ranking" en el menú principal
+Selecciona el periodo: 
+Semanal: Clasificación de los últimos 7 días
+Mensual: Clasificación del mes actual
+Global: Clasificación de todos los tiempos
+Verás el Top 100 de usuarios con más puntos
+Tu posición se destacará en color
+Información mostrada:
+Posición en el ranking
+Nombre del usuario
+Puntos acumulados
+Rutas completadas
+Comentar y Valorar Rutas
+Dejar un Comentario
+Accede a los detalles de una ruta que hayas completado
+Desplázate hasta la sección "Comentarios"
+Haz clic en "Añadir Comentario"
+Escribe tu opinión sobre la ruta: 
+¿Cómo fue la experiencia?
+¿Recomendaciones para otros usuarios?
+¿Estado del sendero?
+Selecciona una valoración de 1 a 5 estrellas
+Haz clic en "Publicar Comentario"
+Tu comentario quedará pendiente de moderación y será visible una vez aprobado por el administrador
+Normas de la Comunidad:
+Sé respetuoso con otros usuarios
+Evita lenguaje ofensivo o inapropiado
+Proporciona información útil y constructiva
+Gestión de Perfil
+Ver tu Perfil Personal
+Haz clic en tu nombre de usuario o "Mi Perfil" en el menú
+Verás tu dashboard personal: 
+Puntos totales acumulados
+Rutas completadas
+Kilómetros recorridos
+Logros desbloqueados
+Posición en el ranking
+Editar tu Perfil
+En tu perfil, haz clic en "Editar Perfil" o el icono de configuración ⚙️
+Puedes modificar: 
+Nombre y Apellidos
+Contraseña (se requiere la contraseña actual)
+Haz clic en "Guardar Cambios"
+Recibirás una confirmación
+Nota de Seguridad: No puedes cambiar tu correo electrónico por motivos de seguridad. Si necesitas modificarlo, contacta con el administrador.
+Ver tu Historial
+En tu perfil, accede a "Historial"
+Verás la lista completa de rutas que has completado: 
+Nombre de la ruta
+Fecha de completación
+Tiempo empleado
+Puntos ganados
+Notas personales (si las añadiste)
+Puedes filtrar por fecha o ordenar por puntos
+Cerrar Sesión
+Haz clic en tu nombre de usuario en la esquina superior derecha
+Selecciona "Cerrar Sesión"
+Serás redirigido a la página principal
+Recomendación: Cierra siempre tu sesión si usas un ordenador compartido.
+Soporte y Ayuda
+Preguntas Frecuentes (FAQ)
+P: ¿Puedo completar la misma ruta varias veces? R: El sistema registra solo la primera completación para evitar duplicación de puntos, pero puedes realizar la ruta físicamente cuantas veces quieras.
+P: ¿Cómo se calculan los puntos? R: Los puntos se asignan según la dificultad de la ruta: Baja (50pts), Media (100pts), Alta (200pts), Muy Alta (300pts). Los retos y logros otorgan puntos adicionales.
+P: ¿Los comentarios son públicos inmediatamente? R: No, todos los comentarios pasan por un proceso de moderación para garantizar contenido apropiado.
+P: ¿Puedo des inscribirme de un reto? R: Actualmente no es posible des inscribirse una vez participas, pero puedes simplemente no completarlo sin penalización.
+P: ¿Las rutas precargadas son reales? R: Sí, todas las rutas precargadas han sido seleccionadas y verificadas por el administrador del sistema.
+Contacto
+Si tienes problemas técnicos o preguntas no resueltas:
+Email: soporte@retoasturiasactiva.es
+Formulario de contacto: Disponible en el footer de la página
+8.2. Manual de Instalación y Despliegue
+Requisitos del Sistema
+Requisitos de Hardware (Servidor)
+Mínimos:
+Procesador: 2 núcleos a 2.0 GHz
+RAM: 2 GB
+Almacenamiento: 10 GB de espacio libre
+Ancho de banda: 10 Mbps
+Recomendados:
+Procesador: 4 núcleos a 2.5 GHz o superior
+RAM: 4 GB o más
+Almacenamiento: 20 GB SSD
+Ancho de banda: 50 Mbps o superior
+Requisitos de Software
+Servidor Web:
+Apache 2.4 o superior
+Nginx 1.18 o superior (alternativa)
+Base de Datos:
+MySQL 5.7 o superior
+MariaDB 10.3 o superior (alternativa)
+Lenguaje:
+PHP 7.4 o superior (recomendado PHP 8.0+)
+Extensiones PHP necesarias: 
+mysqli o pdo_mysql
+json
+mbstring
+openssl
+curl
+Cliente (Navegadores Soportados):
+Google Chrome 90+
+Mozilla Firefox 88+
+Microsoft Edge 90+
+Safari 14+
+Opera 76+
+Instalación en Entorno de Desarrollo (XAMPP)
+Paso 1: Instalar XAMPP
+Descargar XAMPP: 
+Visita https://www.apachefriends.org
+Descarga la versión para tu sistema operativo (Windows, Linux, macOS)
+Versión recomendada: XAMPP con PHP 8.0+
+Ejecutar el Instalador: 
+Windows: Ejecuta el archivo .exe como administrador
+Linux: chmod +x xampp-installer.run && sudo ./xampp-installer.run
+macOS: Abre el archivo .dmg y arrastra XAMPP a Aplicaciones
+Configuración Inicial: 
+Instala todos los componentes (Apache, MySQL, PHP, phpMyAdmin)
+Ubicación de instalación: 
+Windows: C:\xampp
+Linux/macOS: /opt/lampp
+Paso 2: Configurar Apache y MySQL
+Iniciar XAMPP Control Panel: 
+Windows: Ejecuta xampp-control.exe
+Linux: sudo /opt/lampp/lampp start
+macOS: Abre XAMPP desde Aplicaciones
+Iniciar Servicios: 
+Haz clic en "Start" junto a Apache
+Haz clic en "Start" junto a MySQL
+Verifica que ambos servicios muestren fondo verde (en ejecución)
+Verificar Funcionamiento: 
+Abre un navegador
+Accede a http://localhost
+Deberías ver la página de bienvenida de XAMPP
+Paso 3: Descargar el Proyecto
+Clonar desde GitHub (si está disponible): bash
+   cd C:\xampp\htdocs    # Windows
+   cd /opt/lampp/htdocs  # Linux/macOS
+   
+   git clone https://github.com/usuario/reto-asturias-activa.git
+O descargar ZIP: 
+Descarga el archivo del proyecto
+Extrae el contenido en: 
+Windows: C:\xampp\htdocs\reto-asturias-activa
+Linux/macOS: /opt/lampp/htdocs/reto-asturias-activa
+Paso 4: Crear la Base de Datos
+Acceder a phpMyAdmin: 
+Abre http://localhost/phpmyadmin
+Crear Base de Datos: 
+Haz clic en "Nueva" en el panel izquierdo
+Nombre de la base de datos: reto_asturias_activa
+Cotejamiento: utf8mb4_unicode_ci
+Haz clic en "Crear"
+Importar Estructura: 
+Selecciona la base de datos reto_asturias_activa
+Haz clic en la pestaña "Importar"
+Haz clic en "Seleccionar archivo"
+Navega a: reto-asturias-activa/database/schema.sql
+Haz clic en "Continuar"
+La estructura de tablas se creará automáticamente
+Importar Datos Iniciales (rutas precargadas): 
+Repite el proceso de importación con el archivo: reto-asturias-activa/database/data_inicial.sql
+Esto cargará: 
+Rutas precargadas del sistema
+Categorías
+Zonas geográficas
+Logros predefinidos
+Usuario administrador por defecto
+9. Conclusiones
+La culminación del proyecto "Reto Asturias Activa" representa la materialización de un sistema web integral de gamificación, cumpliendo satisfactoriamente los objetivos planteados en la fase de planificación. Este trabajo no solo ha demostrado la viabilidad técnica de la aplicación, sino que también ha evidenciado el potencial de la tecnología para fomentar hábitos de vida saludables y promover el valioso patrimonio natural de Asturias.
+9.1. Logros y Cumplimiento de Objetivos
+El principal logro es la entrega de una plataforma completamente funcional que integra las complejas mecánicas de la gamificación con la gestión de contenidos geográficos.
+Implementación de la Gamificación: Se ha integrado con éxito un sistema robusto de puntos, medallas (logros) y retos comunitarios. Este núcleo de gamificación actúa como el motor de motivación, transformando el senderismo en una actividad interactiva y adictiva.
+Desarrollo Tecnológico Sólido: Utilizando el framework Laravel y MySQL, se ha construido una arquitectura escalable y segura, capaz de manejar la gestión de usuarios, las transacciones de rutas y la persistencia de datos de rendimiento.
+Fomento de la Actividad y el Turismo: La plataforma ha cumplido su rol de catálogo inicial, al incluir un conjunto de rutas precargadas y validadas por el administrador, garantizando que los usuarios puedan empezar a interactuar con el sistema desde el primer momento.
+Gestión de Contenidos Centralizada: Se ha desarrollado un panel de administración eficiente que permite la curación de rutas, la gestión de usuarios y la monitorización de las estadísticas de participación, asegurando la sostenibilidad y el mantenimiento del contenido del proyecto.
+9.2. Contribución e Impacto Potencial
+"Reto Asturias Activa" trasciende el mero desarrollo de software para convertirse en una herramienta con potencial de impacto social y económico en la región:
+Salud y Bienestar: Ofrece un estímulo tangible para combatir el sedentarismo, promoviendo la actividad física regular entre los residentes y visitantes.
+Promoción Turística Desestacionalizada: Al centrarse en rutas de montaña y senderos, la aplicación ayuda a diversificar la oferta turística más allá de la temporada alta de verano, fomentando el turismo activo y sostenible a lo largo de todo el año.
+Valoración del Territorio: Al destacar puntos de interés, patrimonio local y rutas menos conocidas, el proyecto contribuye a revalorizar el entorno rural asturiano.
+9.3. Retos y Lecciones Aprendidas
+El proceso de desarrollo presentó desafíos clave que se abordaron con éxito, proporcionando valiosas lecciones:
+Integración Geográfica: La mayor complejidad residió en la integración y el manejo eficiente de APIs de geolocalización (e.g., Google Maps API) para el dibujo, almacenamiento y validación de los trazados de las rutas.
+Modelado de Datos: El diseño del modelo Entidad-Relación requirió un análisis exhaustivo para garantizar la atomicidad y la eficiencia en la consulta de datos complejos como la progresión de logros y la clasificación en tiempo real.
+Lección Aprendida: Se reafirmó la importancia de una metodología de desarrollo ágil, que permitió iterar rápidamente sobre el diseño de la interfaz de usuario (UI/UX) para asegurar la claridad y facilidad de uso de las complejas mecánicas de gamificación.
+9.4. Futuras Líneas de Desarrollo
+Para evolucionar la plataforma y maximizar su potencial, se proponen las siguientes líneas de trabajo futuro:
+Desarrollo de Aplicación Móvil Nativa/Híbrida: La experiencia del usuario mejoraría exponencialmente con una aplicación que permita el seguimiento de la ruta en tiempo real sin conexión a internet (modo offline) y la notificación push de logros.
+Integración Social Avanzada: Implementar funcionalidades sociales como rankings segmentados por municipio o edad, feeds de actividad entre amigos, y la posibilidad de compartir rutas directamente en redes sociales.
+Analítica Predictiva: Desarrollar un módulo que, basándose en los datos de actividad, ofrezca recomendaciones personalizadas de rutas o sugiera la creación de nuevos retos basados en el rendimiento del usuario.
+Conexión con Dispositivos Wearables: Integración con plataformas de salud como Google Fit o Apple Health para sincronizar automáticamente las actividades registradas.
+En resumen, "Reto Asturias Activa" es un proyecto terminado con éxito que sirve como prueba de concepto sólida y como base para una iniciativa de gamificación escalable, con la capacidad real de influir positivamente en la comunidad asturiana.
+10. Referencias
+El presente Trabajo de Fin de Grado se ha desarrollado a partir de una revisión bibliográfica y técnica exhaustiva, que abarca desde los fundamentos teóricos de la gamificación hasta la documentación técnica de las tecnologías de desarrollo web y la contextualización geográfica de la comunidad autónoma de Asturias. El rigor del proyecto se sustenta en la consulta de las siguientes fuentes:
+10.1. Fundamentos Teóricos de la Gamificación y la Motivación
+Esta sección proporciona la base conceptual para el diseño del sistema de recompensas, logros y retos de "Reto Asturias Activa", justificando por qué los elementos de juego son efectivos para cambiar el comportamiento y fomentar la actividad física.
+Deterding, S., Dixon, D., Khaled, R., & Nacke, L. (2011). From game design elements to gamefulness: defining "gamification." Proceedings of the 15th International Academic MindTrek Conference: Envisioning Future Media Environments. ACM. Este artículo es fundamental para la definición académica de la gamificación y la distinción entre los elementos de diseño de juegos y la experiencia lúdica que busca la plataforma.
+Werbach, K., & Hunter, D. (2012). For the Win: How Game Thinking Can Revolutionize Your Business. Wharton Digital Press. Obra esencial que establece la taxonomía de los elementos de juego más comunes, como los Puntos, Medallas y Tablas de Clasificación (PBL), y su aplicación estratégica en contextos serios, como el fitness y la educación.
+Chou, Y. K. (2015). Actionable Gamification: Beyond Points, Badges, and Leaderboards. Octalysis Media. Libro de referencia utilizado para diseñar un sistema de motivación avanzado, haciendo énfasis en los ocho núcleos de la motivación humana y cómo estos se relacionan con los diferentes tipos de retos y recompensas ofrecidos a los usuarios.
+Ryan, R. M., & Deci, E. L. (2000). Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being. American Psychologist, 55(1), 68–78. Teoría que apoya el diseño de logros y retos que fomentan la autonomía y la competencia percibida, claves para que la actividad (el senderismo) se mantenga a largo plazo.
+10.2. Ingeniería del Software y Metodología de Desarrollo
+Las siguientes fuentes proporcionan el marco metodológico y las guías de buenas prácticas para la arquitectura del sistema, el diseño de la base de datos y la gestión del proyecto.
+Pressman, R. S. (2010). Ingeniería del Software: Un Enfoque Práctico (Séptima Edición). McGraw-Hill. Referencia central para la definición del ciclo de vida del software, el análisis de requisitos funcionales y no funcionales, y la metodología de pruebas.
+ISO/IEC 25010. (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Norma utilizada para clasificar y definir los requisitos de calidad del sistema, como la usabilidad, la mantenibilidad y la seguridad.
+Fowler, M. (2003). Patterns of Enterprise Application Architecture. Addison-Wesley. Fuente consultada para aplicar patrones de diseño eficientes, como el Modelo-Vista-Controlador (MVC), que es la base del framework Laravel utilizado.
+Nielsen, J. (2011). Usability 101: Introduction to Usability. Nielsen Norman Group. Principios fundamentales de usabilidad aplicados en el diseño de la interfaz de usuario (UI) para garantizar que la plataforma sea intuitiva, especialmente para la interacción con los mapas y el registro de rutas.
+10.3. Contexto Geográfico y Turismo Activo en Asturias
+Para asegurar la coherencia del proyecto con el objetivo de fomentar el turismo y la actividad física en la región, se han consultado documentos oficiales y estudios específicos.
+Gobierno del Principado de Asturias - Consejería de Cultura, Política Llingüística y Turismo. (2023). Plan Estratégico de Turismo de Asturias 2020-2030. Documento oficial clave para alinear el proyecto con los objetivos de desarrollo turístico sostenible y la promoción de la naturaleza asturiana.
+Instituto Geográfico Nacional (IGN) de España. (2024). Servicios Web de Mapas (WMS y WFS). Documentación técnica utilizada para la posible consulta de datos cartográficos oficiales, incluyendo altimetría y la delimitación de senderos homologados.
+García, J. A., & Fernández, E. (2020). El senderismo como motor de desarrollo rural en la Cornisa Cantábrica: un estudio de caso en Asturias. Cuadernos de Geografía, 9(1), 45-62. Estudio que valida la importancia del senderismo como actividad principal a potenciar mediante la aplicación, enfocándose en la dispersión geográfica del turismo.
+Federación de Deportes de Montaña, Escalada y Senderismo del Principado de Asturias (FEMPA). (2024). Catálogo y normativa de senderos homologados. Publicación utilizada como referencia para la validación y categorización de las rutas pre-cargadas en el sistema.
+10.4. Referencias de Documentación Técnica y Servicios Web
+Esta sección enumera la documentación de las herramientas tecnológicas directamente empleadas en la implementación, necesarias para replicar o mantener el sistema.
+Laravel Framework. (Versión 10.x/11.x, 2024). Documentación Oficial. Recuperado de https://laravel.com/docs. Fuente primaria para la sintaxis, patrones de diseño, y la gestión del back-end (Eloquent ORM, routing, autenticación).
+Google Maps Platform. (2024). Documentación de Maps JavaScript API, Geocoding API y Directions API. Documentación técnica esencial para la implementación de todas las funcionalidades geográficas de la aplicación, incluyendo el dibujo de polylines, la conversión de coordenadas y el cálculo de distancias.
+MySQL. (Versión 8.0, 2024). Reference Manual. Recuperado de https://dev.mysql.com/doc/refman/8.0/en/. Referencia para la definición de la base de datos, la optimización de las consultas (especialmente en las tablas de clasificación) y el manejo de tipos de datos geográficos si se usaran extensiones espaciales.
+Bootstrap. (Versión 5.x, 2024). Documentación Oficial. Utilizado como framework CSS y JavaScript para el diseño responsive y la rápida construcción de la interfaz de usuario.
+Font Awesome. (Versión 6.x, 2024). Icon Library and Toolkit. Librería de iconos utilizada para proporcionar una iconografía clara y coherente en todos los módulos del sistema, especialmente en el diseño de los logros y el panel de administración.
+11. Anexos
+Los anexos contienen material de apoyo detallado que complementa la información del cuerpo principal del trabajo, proporcionando la documentación técnica necesaria para la comprensión completa del sistema.
+Anexo A: Planificación Detallada del Proyecto (Diagrama de Gantt)
+Se incluye la versión más granular del Plan de Temporización que se presentó en el apartado 1. Este diagrama de Gantt extendido desglosa cada fase del desarrollo (análisis, diseño, implementación y pruebas) en tareas y subtareas semanales/diarias, mostrando la distribución de las horas de trabajo estimadas y reales.
+A.1. Desglose detallado de las tareas de modelado de la base de datos.
+A.2. Time-log de las horas dedicadas a la integración de la API de geolocalización.
+A.3. Sprint Backlog de las iteraciones de desarrollo, si se utilizó una metodología ágil como Scrum.
+Anexo B: Modelo Entidad-Relación Completo (MER)
+Se adjunta el esquema completo de la base de datos reto_asturias_activa. Este modelo es fundamental para entender la estructura de datos que soporta la lógica de la aplicación.
+B.1. Diagrama Gráfico del MER: Representación visual de todas las entidades (tablas), sus atributos y las relaciones de cardinalidad (1:1, 1:N, N:M), con énfasis en las claves primarias y foráneas.
+B.2. Diccionario de Datos: Documentación de cada tabla y columna, incluyendo el tipo de dato, su longitud, si acepta nulos, y una breve descripción de su propósito (ej.: logro_id, INT, Clave primaria de la tabla de logros).
+B.3. Scripts de Inicialización: El archivo schema.sql (o la serie de comandos SQL) utilizado para crear la base de datos y todas sus tablas.
+Anexo C: Manual de Instalación y Configuración del Entorno de Producción/Desarrollo
+Este manual detalla los pasos para poner en marcha la aplicación en un nuevo entorno, esencial para que el proyecto pueda ser replicado o mantenido por terceros.
+C.1. Requisitos del Sistema: Versiones de software necesarias (PHP 8.x, MySQL/MariaDB, Composer, Node.js).
+C.2. Pasos de Instalación (Basado en el Snippet Proporcionado):
+Instalación de XAMPP/WAMP/LAMP.
+Clonación del repositorio de GitHub (git clone...).
+Configuración de las variables de entorno (.env file) y credenciales de la base de datos.
+Comandos de inicialización del framework (ej.: composer install, php artisan migrate, php artisan db:seed).
+C.3. Configuración de Servicios Externos: Proceso para obtener y configurar las claves de las APIs de Google Maps.
+Anexo D: Listado Completo de Historias de Usuario (o Casos de Uso)
+Más allá de los requisitos clave presentados en el cuerpo del trabajo, este anexo incluye la lista exhaustiva de todas las historias de usuario (o casos de uso) consideradas en el desarrollo, con su respectiva prioridad (MoSCoW) y estado de implementación.
+D.1. Historias de Usuario para la Gestión del Perfil de Usuario (edición de avatar, cambio de contraseña, etc.).
+D.2. Historias de Usuario del Módulo de Administración (gestión de categorías de rutas, moderación de comentarios, etc.).
+D.3. Tabla de trazabilidad de requisitos, vinculando cada historia de usuario con la porción de código responsable de su implementación.
